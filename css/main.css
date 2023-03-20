@@ -1,0 +1,6711 @@
+/*
+ * Contributed by Rahul Jhaveri on 26/04/17.
+ * JhavTech Studios Pty Ltd (2017)
+ * http://www.jhavtech.com.au
+ * Edited by Brax 2023.
+ */
+
+ html, body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*-webkit-font-smoothing: antialiased;*/
+}
+*{
+  outline: none;
+}
+#gameL2574 {
+    position: absolute;
+    width: 1250px;
+    height: 768px;
+}
+
+img {
+    width: 103px;
+    height: 65px;
+}
+
+#intro_screen_container {
+    width: 1250px;
+    height: 768px;
+    position: absolute;
+    font-family: "MyriadWebPro";
+    background: url('../image/L2574_Instruction_background.png');
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    display: none;
+}
+
+#intro_screen1 {
+    position: absolute;
+    width: 820px;
+    height: 393px;
+    left: 190px;
+    top: 127px;
+}
+
+#intro_screen1_text {
+    position: absolute;
+    width: 393px;
+    height: 264px;
+    left: 215px;
+    top: 120px;
+    color: white;
+    font-size: 57px;
+}
+
+#intro_screen2 {
+    position: absolute;
+    width: 820px;
+    height: 393px;
+    left: 190px;
+    top: 127px;
+    display: none;
+}
+
+#intro_screen2_text {
+    position: absolute;
+    width: 385px;
+    height: 310px;
+    top: 70px;
+    left: 22px;
+    line-height: 31px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#intro_screen2_gif {
+    position: absolute;
+    width: 534px;
+    height: 316px;
+    right: -22px;
+    top: 5px;
+    background: url('../image/L2574_Intro_petal.gif') no-repeat;
+    background-size: 100% 100%;
+}
+
+#intro_screen3 {
+    position: absolute;
+    width: 820px;
+    height: 393px;
+    left: 190px;
+    top: 127px;
+    display: none;
+}
+
+#intro_screen3_text {
+    position: absolute;
+    width: 338px;
+    height: 310px;
+    top: 70px;
+    left: 22px;
+    line-height: 31px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#intro_screen3_gif {
+    position: absolute;
+    width: 418px;
+    height: 269px;
+    right: 22px;
+    top: 67px;
+    background: url('../image/L2574_Fish_intro.gif') no-repeat;
+    background-size: 100% 100%;
+}
+
+#intro_screen4 {
+    position: absolute;
+    width: 820px;
+    height: 393px;
+    left: 190px;
+    top: 127px;
+    display: none;
+}
+
+#intro_screen4_text {
+    position: absolute;
+    width: 395px;
+    height: 310px;
+    top: 70px;
+    left: 22px;
+    line-height: 31px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#intro_screen4_gif {
+    position: absolute;
+    width: 260px;
+    height: 381px;
+    right: 64px;
+    bottom: 25px;
+    background: url('../image/L2574_Intro_status_rating.gif') no-repeat;
+    background-size: 100% 100%;
+}
+
+#intro_screen5 {
+    position: absolute;
+    width: 820px;
+    height: 393px;
+    left: 190px;
+    top: 127px;
+    display: none;
+}
+
+#intro_screen5_text {
+    position: absolute;
+    width: 400px;
+    height: 310px;
+    top: 70px;
+    left: 22px;
+    line-height: 31px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#intro_screen5_image {
+    position: absolute;
+    width: 144px;
+    height: 132px;
+    right: 138px;
+    top: 120px;
+    background: url('../image/L2574_Bluepuff.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#intro_screen5_history {
+    position: absolute;
+    width: 40px;
+    height: 36px;
+    right: 109px;
+    top: 220px;
+    background: url('../image/L2574_Bluepuff_history.png') no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+#intro_screen6 {
+    position: absolute;
+    width: 820px;
+    height: 420px;
+    left: 190px;
+    top: 127px;
+    display: none;
+}
+
+#intro_screen6_text {
+    position: absolute;
+    width: 491px;
+    height: 330px;
+    top: 70px;
+    left: 22px;
+    line-height: 31px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#intro_screen6_gif {
+    position: absolute;
+    width: 225px;
+    height: 208px;
+    right: 40px;
+    bottom: 116px;
+    background: url('../image/L2574_Fizzer_cash.gif') no-repeat;
+    background-size: 100% 100%;
+}
+
+#intro_screen6_gif {
+    position: absolute;
+    width: 233px;
+    height: 216px;
+    right: 64px;
+    bottom: 90px;
+    background: url('../image/L2574_Fizzer_cash.gif') no-repeat;
+    background-size: 100% 100%;
+}
+
+#intro_back {
+    position: absolute;
+    width: 115px;
+    height: 74px;
+    bottom: 161px;
+    left: 143px;
+    cursor: pointer;
+    background: url('../image/L2574_Back.png') no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+#intro_back:hover, #intro_back:focus {
+    position: absolute;
+    width: 115px;
+    height: 74px;
+    bottom: 161px;
+    left: 143px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: url('../image/L2574_Back_hover.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#intro_back:active {
+    position: absolute;
+    width: 115px;
+    height: 74px;
+    bottom: 161px;
+    left: 143px;
+    cursor: pointer;
+    background: url('../image/L2574_Back_focus.png') no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+
+#intro_next {
+    position: absolute;
+    width: 115px;
+    height: 75px;
+    bottom: 162px;
+    right: 191px;
+    cursor: pointer;
+    background: url('../image/L2574_Next.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#intro_next:hover, #intro_next:focus {
+    position: absolute;
+    width: 115px;
+    height: 75px;
+    bottom: 162px;
+    right: 191px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: url('../image/L2574_Next_hover.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#intro_next:active {
+    position: absolute;
+    width: 115px;
+    height: 75px;
+    bottom: 162px;
+    right: 191px;
+    cursor: pointer;
+    background: url('../image/L2574_Next_focus.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#intro_start {
+    width: 120px;
+    height: 71px;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+    background: url('../image/L2574_Start.png') no-repeat;
+    background-size: contain;
+}
+
+#intro_start:hover, #intro_start:focus {
+    width: 120px;
+    height: 71px;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+    background: url('../image/L2574_Start_hover.png') no-repeat;
+    background-size: contain;
+}
+
+#intro_start:active {
+    width: 120px;
+    height: 71px;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+    background: url('../image/L2574_Start_focus.png') no-repeat;
+    background-size: contain;
+}
+
+#preloadScreen {
+    width: 1250px;
+    height: 768px;
+    position: absolute;
+    background: #56B8C2;
+}
+
+#intro_loading_gif {
+    background: url('../image/loading.gif') no-repeat;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 480px;
+    top: 240px;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_popup_cloud {
+    position: absolute;
+    width: 390px;
+    height: 240px;
+    top: 10px;
+    z-index: 3;
+    left: 310px;
+    display: none;
+}
+
+#gs_popup_cloud_img {
+    width: 390px;
+    height: 240px;
+}
+
+#gs_popup_cloud_text {
+    position: absolute;
+    top: 68px;
+    left: 30px;
+    width: 320px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    color: #333333;
+    letter-spacing: 0.7px;
+    line-height: 21px;
+    font-family: MyriadWebProfont;
+}
+
+#gs_error_popup_cloud {
+    position: absolute;
+    width: 390px;
+    height: 240px;
+    top: 10px;
+    z-index: 3;
+    left: 310px;
+    display: none;
+}
+
+#fishbowl {
+    position: absolute;
+    background: url(../image/fish_tank.png);
+    background-size: 100% 100%;
+    height: 134px;
+    width: 146px;
+    left: 896px;
+    top: 13px;
+    z-index: 1;
+}
+
+#gs_error_popup_cloud_img {
+    width: 390px;
+    height: 240px;
+}
+
+#gs_error_popup_cloud_text {
+    position: absolute;
+    top: 68px;
+    left: 30px;
+    width: 320px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+    letter-spacing: 0.7px;
+    line-height: 21px;
+    font-family: MyriadWebProfont;
+}
+
+#gs_error_sad_smiley {
+    position: absolute;
+    top: 25px;
+    left: 133px;
+    width: 31px;
+    height: 31px;
+    background-image: url("../image/L2574_Unsuccess.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#game_screen {
+    width: 1250px;
+    height: 768px;
+    position: absolute;
+    background: url('../image/L2574_Game_background.png');
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.gs_market_class {
+    width: 95px;
+    height: 60px;
+    position: absolute;
+    display: none;
+}
+
+#gs_market_name1 {
+    width: 100px;
+    height: 70px;
+    right: 254px;
+    bottom: 161px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name2 {
+    width: 100px;
+    height: 70px;
+    right: 515px;
+    bottom: 87px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name3 {
+    width: 100px;
+    height: 70px;
+    right: 523px;
+    bottom: 217px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name4 {
+    width: 100px;
+    height: 70px;
+    left: 227px;
+    top: 285px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name5 {
+    width: 100px;
+    height: 70px;
+    left: 217px;
+    bottom: 197px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name6 {
+    width: 100px;
+    height: 70px;
+    left: 285px;
+    bottom: 268px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name7 {
+    width: 100px;
+    height: 70px;
+    left: 368px;
+    top: 343px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name8 {
+    width: 100px;
+    height: 70px;
+    left: 382px;
+    top: 253px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name9 {
+    width: 100px;
+    height: 70px;
+    right: 690px;
+    bottom: 260px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name10 {
+    width: 100px;
+    height: 70px;
+    right: 627px;
+    bottom: 384px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name11 {
+    width: 100px;
+    height: 70px;
+    right: 624px;
+    bottom: 201px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name12 {
+    width: 100px;
+    height: 70px;
+    right: 522px;
+    bottom: 303px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name13 {
+    width: 100px;
+    height: 70px;
+    right: 284px;
+    bottom: 49px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name14 {
+    width: 100px;
+    height: 70px;
+    left: 150px;
+    top: 347px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_market_name15 {
+    width: 100px;
+    height: 70px;
+    left: 87px;
+    bottom: 252px;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#igs_market_name1, #igs_market_name2, #igs_market_name3, #igs_market_name4, #igs_market_name5, #igs_market_name6, #igs_market_name7, #igs_market_name8, #igs_market_name9, #igs_market_name10, #igs_market_name11, #igs_market_name12, #igs_market_name13, #igs_market_name14, #igs_market_name15 {
+    width: 100px;
+    height: 70px;
+    right: 253px;
+    bottom: 133px;
+    cursor: pointer;
+}
+
+#gs_market_name1:hover {
+    content: url('../image/L2574_gs_market_name1_hover.gif');
+    width: 100px;
+    height: 79px;
+    right: 251px;
+    bottom: 168px;
+}
+
+#gs_market_name2:hover {
+    content: url('../image/L2574_gs_market_name2_hover.gif');
+    width: 100px;
+    height: 84px;
+    right: 512px;
+    bottom: 93px;
+}
+
+#gs_market_name3:hover {
+    content: url('../image/L2574_gs_market_name3_hover.gif');
+    width: 98px;
+    height: 78px;
+    right: 522px;
+    bottom: 224px;
+}
+
+#gs_market_name4:hover {
+    content: url('../image/L2574_gs_market_name4_hover.gif');
+    width: 100px;
+    height: 82px;
+    left: 230px;
+    top: 266px;
+}
+
+#gs_market_name5:hover {
+    content: url('../image/L2574_gs_market_name5_hover.gif');
+    width: 100px;
+    height: 80px;
+    left: 220px;
+    bottom: 205px;
+}
+
+#gs_market_name6:hover {
+    content: url('../image/L2574_gs_market_name6_hover.gif');
+    width: 100px;
+    height: 80px;
+    left: 288px;
+    bottom: 275px;
+}
+
+#gs_market_name7:hover {
+    content: url('../image/L2574_gs_market_name7_hover.gif');
+    width: 100px;
+    height: 80px;
+    left: 370px;
+    top: 326px;
+}
+
+#gs_market_name8:hover {
+    content: url('../image/L2574_gs_market_name8_hover.gif');
+    width: 100px;
+    height: 80px;
+    left: 385px;
+    top: 238px;
+}
+
+#gs_market_name9:hover {
+    content: url('../image/L2574_gs_market_name9_hover.gif');
+    width: 100px;
+    height: 80px;
+    right: 687px;
+    bottom: 267px;
+}
+
+#gs_market_name10:hover {
+    content: url('../image/L2574_gs_market_name10_hover.gif');
+    width: 100px;
+    height: 80px;
+    right: 625px;
+    bottom: 392px;
+}
+
+#gs_market_name11:hover {
+    content: url('../image/L2574_gs_market_name11_hover.gif');
+    width: 96px;
+    height: 80px;
+    right: 622px;
+    bottom: 208px;
+}
+
+#gs_market_name12:hover {
+    content: url('../image/L2574_gs_market_name12_hover.gif');
+    width: 100px;
+    height: 80px;
+    right: 519px;
+    bottom: 311px;
+}
+
+#gs_market_name13:hover {
+    content: url('../image/L2574_gs_market_name13_hover.gif');
+    width: 103px;
+    height: 83px;
+    right: 280px;
+    bottom: 55px;
+}
+
+#gs_market_name14:hover {
+    content: url('../image/L2574_gs_market_name14_hover.gif');
+    width: 100px;
+    height: 80px;
+    left: 153px;
+    top: 333px;
+}
+
+#gs_market_name15:hover {
+    content: url('../image/L2574_gs_market_name15_hover.gif');
+    width: 100px;
+    height: 80px;
+    left: 90px;
+    bottom: 255px;
+}
+
+#gs_market_name1:focus img {
+    content: url('../image/L2574_gs_market_name1_hover.gif');
+}
+
+#gs_market_name2:focus img {
+    content: url('../image/L2574_gs_market_name2_hover.gif');
+}
+
+#gs_market_name3:focus img {
+    content: url('../image/L2574_gs_market_name3_hover.gif');
+}
+
+#gs_market_name4:focus img {
+    content: url('../image/L2574_gs_market_name4_hover.gif');
+}
+
+#gs_market_name5:focus img {
+    content: url('../image/L2574_gs_market_name5_hover.gif');
+}
+
+#gs_market_name6:focus img {
+    content: url('../image/L2574_gs_market_name6_hover.gif');
+}
+
+#gs_market_name7:focus img {
+    content: url('../image/L2574_gs_market_name7_hover.gif');
+}
+
+#gs_market_name8:focus img {
+    content: url('../image/L2574_gs_market_name8_hover.gif');
+}
+
+#gs_market_name9:focus img {
+    content: url('../image/L2574_gs_market_name9_hover.gif');
+}
+
+#gs_market_name10:focus img {
+    content: url('../image/L2574_gs_market_name10_hover.gif');
+}
+
+#gs_market_name11:focus img {
+    content: url('../image/L2574_gs_market_name11_hover.gif');
+}
+
+#gs_market_name12:focus img {
+    content: url('../image/L2574_gs_market_name12_hover.gif');
+}
+
+#gs_market_name13:focus img {
+    content: url('../image/L2574_gs_market_name13_hover.gif');
+}
+
+#gs_market_name14:focus img {
+    content: url('../image/L2574_gs_market_name14_hover.gif');
+}
+
+#gs_market_name15:focus img {
+    content: url('../image/L2574_gs_market_name15_hover.gif');
+}
+
+#gs_cash {
+    position: absolute;
+    width: 90px;
+    height: 55px;
+    top: 38px;
+    right: 535px;
+    font-family: MyriadWebProbolditalic;
+    font-size: 27px;
+    color: #ff5c00;
+    text-align: center;
+    -webkit-transform: rotate(-9deg);
+    -moz-transform: rotate(-9deg);
+    -ms-transform: rotate(-9deg);
+    -o-transform: rotate(-9deg);
+}
+
+#gs_status {
+    position: absolute;
+    width: 224px;
+    height: 173px;
+    right: 328px;
+    top: 2px;
+    z-index: 3;
+}
+
+#gs_stock_text {
+    position: absolute;
+    width: 180px;
+    height: 249px;
+    top: 22px;
+    right: 41px;
+    background: url(../image/L2574_Cloud.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_stock_content {
+    position: absolute;
+    width: 132px;
+height: 209px;
+top: 50px;
+right: 28px;
+color: #073d4c;
+line-height: 22px;
+font-family: MyriadWebProfont;
+font-weight: bold;
+text-align: center;
+letter-spacing: 0.2px;
+font-size: 23px;
+}
+
+#gs_brief_overlay {
+    position: absolute;
+    width: 1250px;
+    height: 768px;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    outline: none;
+    z-index: 10;
+}
+
+#gs_brief {
+    position: absolute;
+    width: 300px;
+    height: 236px;
+    top: 528px;
+    left: -109px;
+    cursor: pointer;
+    background: url('../image/L2574_Mybrief.gif') no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_brief_popup {
+    position: absolute;
+    width: 732px;
+    height: 577px;
+    left: 228px;
+    top: 147px;
+    background: url('../image/L2574_Mybrief_background.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_brief_text1 {
+    position: absolute;
+    width: 500px;
+    height: 68px;
+    top: 171px;
+    left: 136px;
+    font-size: 25px;
+    font-family: MyriadWebPro;
+    line-height: 25px;
+    -webkit-transform: skew(15deg, -3deg);
+    -moz-transform: skew(15deg, -3deg);
+    -o-transform: skew(15deg, -3deg);
+    -ms-transform: skew(15deg, -3deg);
+    transform: skew(15deg, -3deg);
+}
+
+#gs_popup_smiley {
+    position: absolute;
+    top: 25px;
+    left: 133px;
+    width: 31px;
+    height: 31px;
+}
+
+#gs_brief_text2 {
+    position: absolute;
+    width: 471px;
+    height: 68px;
+    top: 252px;
+    left: 155px;
+    font-size: 25px;
+    font-family: MyriadWebPro;
+    line-height: 25px;
+    -webkit-transform: skew(13deg, -4deg);
+    -moz-transform: skew(13deg, -4deg);
+    -o-transform: skew(13deg, -4deg);
+    -ms-transform: skew(13deg, -4deg);
+    transform: skew(13deg, -4deg);
+}
+
+#gs_brief_text3 {
+    position: absolute;
+    width: 459px;
+    height: 68px;
+    top: 315px;
+    left: 173px;
+    font-size: 25px;
+    font-family: MyriadWebPro;
+    line-height: 25px;
+    -webkit-transform: skew(13deg, -5deg);
+    -moz-transform: skew(13deg, -5deg);
+    -o-transform: skew(13deg, -5deg);
+    -ms-transform: skew(13deg, -5deg);
+    transform: skew(13deg, -5deg);
+}
+
+#gs_brief_close {
+    position: absolute;
+    width: 38px;
+    height: 33px;
+    top: 94px;
+    right: 122px;
+    cursor: pointer;
+    background: url('../image/L2574_Mybrief_close.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    display: none;
+}
+
+#gs_brief_close:hover {
+    position: absolute;
+    width: 38px;
+    height: 33px;
+    top: 94px;
+    right: 122px;
+    transform: scale(1.2);
+    cursor: pointer;
+    background: url('../image/L2574_Mybrief_close_hover.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_brief_close:active {
+    position: absolute;
+    width: 38px;
+    height: 33px;
+    top: 94px;
+    right: 122px;
+    cursor: pointer;
+    background: url('../image/L2574_Mybrief_close_focus.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_role_overlay {
+    position: absolute;
+    width: 1250px;
+    height: 768px;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 10;
+    outline: none;
+}
+
+#gs_role {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    bottom: -8px;
+    left: 68px;
+    cursor: pointer;
+    background: url('../image/L2574_Myrole.gif') no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gs_role_popup {
+    position: absolute;
+    width: 752px;
+    height: 565px;
+    left: 191px;
+    bottom: 97px;
+    background: url('../image/L2574_Myrole_background.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_role_actor_gif {
+    position: absolute;
+    width: 277px;
+    height: 283px;
+    left: -95px;
+    top: 77px;
+    background: url('../image/L2574_Myrole_actor.gif') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+}
+
+#gs_role_text {
+    position: absolute;
+    width: 517px;
+    height: 135px;
+    top: 119px;
+    left: 160px;
+    color: #333333;
+    font-family: MyriadWebPro;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+#gs_role_close {
+    position: absolute;
+    width: 46px;
+    height: 43px;
+    top: 58px;
+    right: 7px;
+    cursor: pointer;
+    background: url('../image/L2574_Myrole_close.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    display:none;
+}
+
+#gs_role_close:hover {
+    position: absolute;
+    width: 46px;
+    height: 43px;
+    top: 58px;
+    right: 7px;
+    cursor: pointer;
+    background: url('../image/L2574_Myrole_close_hover.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_role_close:active {
+    position: absolute;
+    width: 46px;
+    height: 43px;
+    top: 58px;
+    right: 7px;
+    cursor: pointer;
+    background: url('../image/L2574_Myrole_close_focus.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_start_again {
+    position: absolute;
+    width: 139px;
+    height: 43px;
+    bottom: 2px;
+    left: 277px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+#start_again_img {
+    width: 139px;
+    height: 43px;
+}
+
+#gs_start_again:hover, #gs_start_again:focus {
+    position: absolute;
+    width: 139px;
+    height: 43px;
+    bottom: 2px;
+    left: 277px;
+    cursor: pointer;
+}
+
+#gs_brief_1_container {
+    width: 130px;
+    height: 102px;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    cursor: pointer;
+    display: block;
+}
+
+#gs_role_1_container {
+    width: 130px;
+    height: 102px;
+    position: absolute;
+    bottom: 0px;
+    left: 135px;
+    cursor: pointer;
+    display: block;
+}
+
+#gs_brief_1_container:hover {
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 100ms ease-in;
+    transform: scale(1.1);
+}
+
+#gs_role_1_container:hover {
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 100ms ease-in;
+    transform: scale(1.1);
+}
+
+#gs_start_again:active {
+    position: absolute;
+    width: 139px;
+    height: 43px;
+    bottom: 2px;
+    left: 277px;
+    cursor: pointer;
+}
+
+#gs_startagain_overlay {
+    position: absolute;
+    width: 1250px;
+    height: 768px;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 10;
+}
+
+#gs_startagain_popup {
+    position: absolute;
+    width: 527px;
+    height: 300px;
+    left: 360px;
+    bottom: 137px;
+    background: url('../image/L2574_Startagain_window.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_startagain_popup_text {
+    position: absolute;
+    width: 363px;
+    height: 130px;
+    top: 60px;
+    left: 82px;
+    color: 333333;
+    font-family: MyriadWebProfont;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+}
+
+#gs_start_again_yes {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 60px;
+    left: 68px;
+    cursor: pointer;
+}
+
+#gs_start_again_yes:hover {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 60px;
+    left: 68px;
+    cursor: pointer;
+}
+
+#gs_start_again_yes:active {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 60px;
+    left: 68px;
+    cursor: pointer;
+}
+
+#gs_start_again_no {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 60px;
+    left: 322px;
+    cursor: pointer;
+}
+
+#gs_start_again_no:hover {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 60px;
+    left: 322px;
+    cursor: pointer;
+}
+
+#gs_start_again_no:active {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 60px;
+    left: 322px;
+    cursor: pointer;
+}
+
+#gs_start_again_yes_img {
+    width: 150px;
+    height: 39px;
+}
+
+#gs_start_again_no_img {
+    width: 150px;
+    height: 39px;
+}
+
+#gs_start_close {
+    position: absolute;
+    width: 35px;
+    height: 38px;
+    top: 17px;
+    right: 22px;
+    cursor: pointer;
+    background: url('../image/L2574_Myrole_close.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_start_close:hover {
+    position: absolute;
+    width: 35px;
+    height: 38px;
+    top: 17px;
+    right: 22px;
+    cursor: pointer;
+    background: url('../image/L2574_Myrole_close_hover.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_start_close:active {
+    position: absolute;
+    width: 35px;
+    height: 38px;
+    top: 17px;
+    right: 22px;
+    cursor: pointer;
+    background: url('../image/L2574_Myrole_close_focus.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_fizzer_buy_overlay {
+    position: absolute;
+    width: 1250px;
+    height: 768px;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 10;
+}
+
+#gs_fizzer_buy_popup {
+    position: absolute;
+    width: 527px;
+    height: 304px;
+    left: 360px;
+    bottom: 137px;
+    background: url('../image/L2574_Startagain_window.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_fizzer_buy_popup_text {
+    position: absolute;
+    width: 429px;
+    height: 135px;
+    top: 52px;
+    left: 41px;
+    color: 333333;
+    font-family: MyriadWebProfont;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+}
+
+#gs_fizzer_buy_yes {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 56px;
+    left: 58px;
+    cursor: pointer;
+}
+
+#gs_fizzer_buy_yes_img {
+    width: 150px;
+    height: 39px;
+}
+
+#gs_fizzer_buy_yes:hover {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 56px;
+    left: 58px;
+    cursor: pointer;
+    backgroun-size: 100% 100%;
+}
+
+#gs_fizzer_buy_yes:active {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 56px;
+    left: 58px;
+    cursor: pointer;
+}
+
+#gs_fizzer_buy_no {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 56px;
+    left: 315px;
+    cursor: pointer;
+}
+
+#gs_fizzer_buy_no_img {
+    width: 150px;
+    height: 39px;
+}
+
+#gs_fizzer_buy_no:hover {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 56px;
+    left: 315px;
+    cursor: pointer;
+}
+
+#gs_fizzer_buy_no:active {
+    position: absolute;
+    width: 150px;
+    height: 39px;
+    bottom: 56px;
+    left: 315px;
+    cursor: pointer;
+}
+
+#gs_fizzer_buy_close {
+    position: absolute;
+    width: 35px;
+    height: 38px;
+    top: 17px;
+    right: 22px;
+    cursor: pointer;
+    background: url('../image/L2574_Myrole_close.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_fizzer_buy_close:hover {
+    position: absolute;
+    width: 35px;
+    height: 38px;
+    top: 17px;
+    right: 22px;
+    cursor: pointer;
+    background: url('../image/L2574_Myrole_close_hover.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_fizzer_buy_close:active {
+    position: absolute;
+    width: 35px;
+    height: 38px;
+    top: 17px;
+    right: 22px;
+    cursor: pointer;
+    background: url('../image/L2574_Myrole_close_focus.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gs_market_modal1 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Fyshwick_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal2 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Fishton_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal3 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Carpville_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal4 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Piranha_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal5 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Whale_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal6 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Dolphin_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal7 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Angelfish_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal8 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Barramundi_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal9 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Goldfish_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal10 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Prawnville_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: ;
+}
+
+#gs_market_modal11 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Catfish_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal12 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Coral_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal13 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Halibutt_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal14 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Koitown_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+#gs_market_modal15 {
+    display: none;
+    position: absolute;
+    width: 950px;
+    height: 619px;
+    left: 20px;
+    top: 138px;
+    background: url('../image/L2574_Guppy_market area.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    z-index: 3;
+}
+
+.gs_market_modal_close {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 7px;
+    top: 94px;
+    cursor: pointer;
+    background: url('../image/L2574_Close.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.gs_market_modal_close:hover {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 7px;
+    top: 94px;
+    cursor: pointer;
+    background: url('../image/L2574_Close_hover.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.gs_market_modal_close:active {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 7px;
+    top: 94px;
+    cursor: pointer;
+    background: url('../image/L2574_Close_focus.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row1, #gsm_modal2_row1, #gsm_modal3_row1, #gsm_modal4_row1, #gsm_modal5_row1, #gsm_modal6_row1, #gsm_modal7_row1, #gsm_modal8_row1, #gsm_modal9_row1, #gsm_modal10_row1, #gsm_modal11_row1, #gsm_modal12_row1, #gsm_modal13_row1, #gsm_modal14_row1, #gsm_modal15_row1 {
+    position: absolute;
+    width: 750px;
+    height: 157px;
+    top: 128px;
+    left: 165px;
+}
+
+#gsm_modal1_row2, #gsm_modal2_row2, #gsm_modal3_row2, #gsm_modal4_row2, #gsm_modal5_row2, #gsm_modal6_row2, #gsm_modal7_row2, #gsm_modal8_row2, #gsm_modal9_row2, #gsm_modal10_row2, #gsm_modal11_row2, #gsm_modal12_row2, #gsm_modal13_row2, #gsm_modal14_row2, #gsm_modal15_row2 {
+    position: absolute;
+    width: 750px;
+    height: 151px;
+    top: 282px;
+    left: 165px;
+}
+
+#gsm_modal1_row3, #gsm_modal2_row3, #gsm_modal3_row3, #gsm_modal4_row3, #gsm_modal5_row3, #gsm_modal6_row3, #gsm_modal7_row3, #gsm_modal8_row3, #gsm_modal9_row3, #gsm_modal10_row3, #gsm_modal11_row3, #gsm_modal12_row3, #gsm_modal13_row3, #gsm_modal14_row3, #gsm_modal15_row3 {
+    width: 750px;
+    height: 158px;
+    position: absolute;
+    bottom: 36px;
+    left: 165px;
+}
+
+
+
+#gsm_modal1_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal1_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal1_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal2_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal2_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal2_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal3_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal3_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal3_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal4_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal4_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal4_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal5_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal5_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal5_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal6_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal6_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal6_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal7_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal7_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal7_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal8_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal8_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal8_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal9_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal9_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal9_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal10_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal10_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal10_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal11_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal11_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal11_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal12_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal12_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal12_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal13_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal13_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal13_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal14_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal14_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal14_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal15_row1_trans {
+    position: absolute;
+    width: 81px;
+    height: 36px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal15_row2_trans {
+    position: absolute;
+    width: 86px;
+    height: 35px;
+    top: 101px;
+    left: 48px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+#gsm_modal15_row3_trans {
+    position: absolute;
+    width: 81px;
+    height: 40px;
+    top: 106px;
+    left: 49px;
+    cursor: pointer;
+    background: url('../image/L2574_Actor_trans.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gsm_modal1_row1_gif, #gsm_modal2_row1_gif, #gsm_modal3_row1_gif, #gsm_modal4_row1_gif, #gsm_modal5_row1_gif, #gsm_modal6_row1_gif, #gsm_modal7_row1_gif, #gsm_modal8_row1_gif, #gsm_modal9_row1_gif, #gsm_modal10_row1_gif, #gsm_modal11_row1_gif, #gsm_modal12_row1_gif, #gsm_modal13_row1_gif, #gsm_modal14_row1_gif, #gsm_modal15_row1_gif {
+    position: absolute;
+    width: 76px;
+    height: 129px;
+    bottom: 11px;
+    left: 64px;
+    background: url('../image/L2574_Actor_Rani.gif') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row1_wanted_container, #gsm_modal2_row1_wanted_container, #gsm_modal3_row1_wanted_container, #gsm_modal4_row1_wanted_container, #gsm_modal5_row1_wanted_container, #gsm_modal6_row1_wanted_container, #gsm_modal7_row1_wanted_container, #gsm_modal8_row1_wanted_container, #gsm_modal9_row1_wanted_container, #gsm_modal10_row1_wanted_container, #gsm_modal11_row1_wanted_container, #gsm_modal12_row1_wanted_container, #gsm_modal13_row1_wanted_container, #gsm_modal14_row1_wanted_container, #gsm_modal15_row1_wanted_container {
+    position: absolute;
+    width: 294px;
+    height: 130px;
+    left: 150px;
+    bottom: 21px;
+}
+
+#gsm_modal1_row1_wanted1, #gsm_modal2_row1_wanted1, #gsm_modal3_row1_wanted1, #gsm_modal4_row1_wanted1, #gsm_modal5_row1_wanted1, #gsm_modal6_row1_wanted1, #gsm_modal7_row1_wanted1, #gsm_modal8_row1_wanted1, #gsm_modal9_row1_wanted1, #gsm_modal10_row1_wanted1, #gsm_modal11_row1_wanted1, #gsm_modal12_row1_wanted1, #gsm_modal13_row1_wanted1, #gsm_modal14_row1_wanted1, #gsm_modal15_row1_wanted1 {
+    position: absolute;
+    width: 135px;
+    height: 110px;
+    bottom: 8px;
+    background: url('../image/L2574_Fish_bubble.png') no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#gsm_modal1_row1_wanted1_title, #gsm_modal2_row1_wanted1_title, #gsm_modal3_row1_wanted1_title, #gsm_modal4_row1_wanted1_title, #gsm_modal5_row1_wanted1_title, #gsm_modal6_row1_wanted1_title, #gsm_modal7_row1_wanted1_title, #gsm_modal8_row1_wanted1_title, #gsm_modal9_row1_wanted1_title, #gsm_modal10_row1_wanted1_title, #gsm_modal11_row1_wanted1_title, #gsm_modal12_row1_wanted1_title, #gsm_modal13_row1_wanted1_title, #gsm_modal14_row1_wanted1_title, #gsm_modal15_row1_wanted1_title {
+    position: absolute;
+    width: 132px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 14px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+#gsm_modal1_row1_wanted1_price, #gsm_modal2_row1_wanted1_price, #gsm_modal3_row1_wanted1_price, #gsm_modal4_row1_wanted1_price, #gsm_modal5_row1_wanted1_price, #gsm_modal6_row1_wanted1_price, #gsm_modal7_row1_wanted1_price, #gsm_modal8_row1_wanted1_price, #gsm_modal9_row1_wanted1_price, #gsm_modal10_row1_wanted1_price, #gsm_modal11_row1_wanted1_price, #gsm_modal12_row1_wanted1_price, #gsm_modal13_row1_wanted1_price, #gsm_modal14_row1_wanted1_price, #gsm_modal15_row1_wanted1_price {
+    position: absolute;
+    width: 77px;
+    height: 60px;
+    left: 98px;
+    top: 46px;
+    z-index: 2;
+    background: url(../image/L2574_Fish_wanted_prize.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+.gsm_price {
+    position: absolute;
+    font-size: 22px;
+    color: #fff;
+    top: -6px;
+    left: 15px;
+    font-family: MyriadWebProbolditalic;
+    -webkit-transform: rotate(33deg);
+    -moz-transform: rotate(33deg);
+    -ms-transform: rotate(33deg);
+    -o-transform: rotate(33deg);
+}
+
+.gsm_price_three {
+    position: absolute;
+    font-size: 22px;
+    color: #fff;
+    top: -5px;
+    left: 10px;
+    font-family: MyriadWebProbolditalic;
+    -webkit-transform: rotate(33deg);
+    -moz-transform: rotate(33deg);
+    -ms-transform: rotate(33deg);
+    -o-transform: rotate(33deg);
+}
+
+.gsm_price_four {
+    position: absolute;
+    font-size: 22px;
+    color: #fff;
+    top: -5px;
+    left: 2px;
+    font-family: MyriadWebProbolditalic;
+    -webkit-transform: rotate(33deg);
+    -moz-transform: rotate(33deg);
+    -ms-transform: rotate(33deg);
+    -o-transform: rotate(33deg);
+}
+
+#gsm_modal1_row1_wanted1_quantity, #gsm_modal2_row1_wanted1_quantity, #gsm_modal3_row1_wanted1_quantity, #gsm_modal4_row1_wanted1_quantity, #gsm_modal5_row1_wanted1_quantity, #gsm_modal6_row1_wanted1_quantity, #gsm_modal7_row1_wanted1_quantity, #gsm_modal8_row1_wanted1_quantity, #gsm_modal9_row1_wanted1_quantity, #gsm_modal10_row1_wanted1_quantity, #gsm_modal11_row1_wanted1_quantity, #gsm_modal12_row1_wanted1_quantity, #gsm_modal13_row1_wanted1_quantity, #gsm_modal14_row1_wanted1_quantity, #gsm_modal15_row1_wanted1_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 6px;
+    right: 13px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row1_wanted2, #gsm_modal2_row1_wanted2, #gsm_modal3_row1_wanted2, #gsm_modal4_row1_wanted2, #gsm_modal5_row1_wanted2, #gsm_modal6_row1_wanted2, #gsm_modal7_row1_wanted2, #gsm_modal8_row1_wanted2, #gsm_modal9_row1_wanted2, #gsm_modal10_row1_wanted2, #gsm_modal11_row1_wanted2, #gsm_modal12_row1_wanted2, #gsm_modal13_row1_wanted2, #gsm_modal14_row1_wanted2, #gsm_modal15_row1_wanted2 {
+    position: absolute;
+    width: 135px;
+    height: 110px;
+    bottom: 8px;
+    left: 144px;
+    background: url('../image/L2574_Fish_bubble.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row1_wanted2_title, #gsm_modal2_row1_wanted2_title, #gsm_modal3_row1_wanted2_title, #gsm_modal4_row1_wanted2_title, #gsm_modal5_row1_wanted2_title, #gsm_modal6_row1_wanted2_title, #gsm_modal7_row1_wanted2_title, #gsm_modal8_row1_wanted2_title, #gsm_modal9_row1_wanted2_title, #gsm_modal10_row1_wanted2_title, #gsm_modal11_row1_wanted2_title, #gsm_modal12_row1_wanted2_title, #gsm_modal13_row1_wanted2_title, #gsm_modal14_row1_wanted2_title, #gsm_modal15_row1_wanted2_title {
+    position: absolute;
+    width: 132px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 14px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+#gsm_modal1_row1_wanted2_price, #gsm_modal2_row1_wanted2_price, #gsm_modal3_row1_wanted2_price, #gsm_modal4_row1_wanted2_price, #gsm_modal5_row1_wanted2_price, #gsm_modal6_row1_wanted2_price, #gsm_modal7_row1_wanted2_price, #gsm_modal8_row1_wanted2_price, #gsm_modal9_row1_wanted2_price, #gsm_modal10_row1_wanted2_price, #gsm_modal11_row1_wanted2_price, #gsm_modal12_row1_wanted2_price, #gsm_modal13_row1_wanted2_price, #gsm_modal14_row1_wanted2_price, #gsm_modal15_row1_wanted2_price {
+    position: absolute;
+    width: 73px;
+    height: 60px;
+    left: 95px;
+    top: 46px;
+    z-index: 2;
+    background: url(../image/L2574_Fish_wanted_prize.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row1_wanted2_quantity, #gsm_modal2_row1_wanted2_quantity, #gsm_modal3_row1_wanted2_quantity, #gsm_modal4_row1_wanted2_quantity, #gsm_modal5_row1_wanted2_quantity, #gsm_modal6_row1_wanted2_quantity, #gsm_modal7_row1_wanted2_quantity, #gsm_modal8_row1_wanted2_quantity, #gsm_modal9_row1_wanted2_quantity, #gsm_modal10_row1_wanted2_quantity, #gsm_modal11_row1_wanted2_quantity, #gsm_modal12_row1_wanted2_quantity, #gsm_modal13_row1_wanted2_quantity, #gsm_modal14_row1_wanted2_quantity, #gsm_modal15_row1_wanted2_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 6px;
+    right: 14px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row1_sale_container, #gsm_modal2_row1_sale_container, #gsm_modal3_row1_sale_container, #gsm_modal4_row1_sale_container, #gsm_modal5_row1_sale_container, #gsm_modal6_row1_sale_container, #gsm_modal7_row1_sale_container, #gsm_modal8_row1_sale_container, #gsm_modal9_row1_sale_container, #gsm_modal10_row1_sale_container, #gsm_modal11_row1_sale_container, #gsm_modal12_row1_sale_container, #gsm_modal13_row1_sale_container, #gsm_modal14_row1_sale_container, #gsm_modal15_row1_sale_container {
+    position: absolute;
+    width: 277px;
+    height: 130px;
+    right: 11px;
+    bottom: 11px;
+}
+
+#gsm_modal1_row1_sale1, #gsm_modal2_row1_sale1, #gsm_modal3_row1_sale1, #gsm_modal4_row1_sale1, #gsm_modal5_row1_sale1, #gsm_modal6_row1_sale1, #gsm_modal7_row1_sale1, #gsm_modal8_row1_sale1, #gsm_modal9_row1_sale1, #gsm_modal10_row1_sale1, #gsm_modal11_row1_sale1, #gsm_modal12_row1_sale1, #gsm_modal13_row1_sale1, #gsm_modal14_row1_sale1, #gsm_modal15_row1_sale1 {
+    position: absolute;
+    width: 130px;
+    height: 128px;
+    cursor: pointer;
+    display: none;
+}
+
+#gsm_modal1_row1_sale1:hover #gsm_modal1_row1_sale1_img, #gsm_modal2_row1_sale1:hover #gsm_modal2_row1_sale1_img, #gsm_modal3_row1_sale1:hover #gsm_modal3_row1_sale1_img, #gsm_modal4_row1_sale1:hover #gsm_modal4_row1_sale1_img, #gsm_modal5_row1_sale1:hover #gsm_modal5_row1_sale1_img, #gsm_modal6_row1_sale1:hover #gsm_modal6_row1_sale1_img, #gsm_modal7_row1_sale1:hover #gsm_modal7_row1_sale1_img, #gsm_modal8_row1_sale1:hover #gsm_modal8_row1_sale1_img, #gsm_modal9_row1_sale1:hover #gsm_modal9_row1_sale1_img, #gsm_modal10_row1_sale1:hover #gsm_modal10_row1_sale1_img, #gsm_modal11_row1_sale1:hover #gsm_modal11_row1_sale1_img, #gsm_modal12_row1_sale1:hover #gsm_modal12_row1_sale1_img, #gsm_modal13_row1_sale1:hover #gsm_modal13_row1_sale1_img, #gsm_modal14_row1_sale1:hover #gsm_modal14_row1_sale1_img, #gsm_modal15_row1_sale1:hover #gsm_modal15_row1_sale1_img {
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 100ms ease-in;
+    transform: scale(1.2);
+}
+
+#gsm_modal1_row1_sale1_title, #gsm_modal2_row1_sale1_title, #gsm_modal3_row1_sale1_title, #gsm_modal4_row1_sale1_title, #gsm_modal5_row1_sale1_title, #gsm_modal6_row1_sale1_title, #gsm_modal7_row1_sale1_title, #gsm_modal8_row1_sale1_title, #gsm_modal9_row1_sale1_title, #gsm_modal10_row1_sale1_title, #gsm_modal11_row1_sale1_title, #gsm_modal12_row1_sale1_title, #gsm_modal13_row1_sale1_title, #gsm_modal14_row1_sale1_title, #gsm_modal15_row1_sale1_title {
+    position: absolute;
+    width: 140px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 6px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    letter-spacing: 0.2px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+}
+
+#gsm_modal1_row1_sale1_price, #gsm_modal2_row1_sale1_price, #gsm_modal3_row1_sale1_price, #gsm_modal4_row1_sale1_price, #gsm_modal5_row1_sale1_price, #gsm_modal6_row1_sale1_price, #gsm_modal7_row1_sale1_price, #gsm_modal8_row1_sale1_price, #gsm_modal9_row1_sale1_price, #gsm_modal10_row1_sale1_price, #gsm_modal11_row1_sale1_price, #gsm_modal12_row1_sale1_price, #gsm_modal13_row1_sale1_price, #gsm_modal14_row1_sale1_price, #gsm_modal15_row1_sale1_price {
+    position: absolute;
+    width: 77px;
+    height: 60px;
+    left: 81px;
+    top: 46px;
+    z-index: 2;
+    background: url('../image/L2574_Fish_selling_prize.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row1_sale1_quantity, #gsm_modal2_row1_sale1_quantity, #gsm_modal3_row1_sale1_quantity, #gsm_modal4_row1_sale1_quantity, #gsm_modal5_row1_sale1_quantity, #gsm_modal6_row1_sale1_quantity, #gsm_modal7_row1_sale1_quantity, #gsm_modal8_row1_sale1_quantity, #gsm_modal9_row1_sale1_quantity, #gsm_modal10_row1_sale1_quantity, #gsm_modal11_row1_sale1_quantity, #gsm_modal12_row1_sale1_quantity, #gsm_modal13_row1_sale1_quantity, #gsm_modal14_row1_sale1_quantity, #gsm_modal15_row1_sale1_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 7px;
+    right: 14px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row1_sale2, #gsm_modal2_row1_sale2, #gsm_modal3_row1_sale2, #gsm_modal4_row1_sale2, #gsm_modal5_row1_sale2, #gsm_modal6_row1_sale2, #gsm_modal7_row1_sale2, #gsm_modal8_row1_sale2, #gsm_modal9_row1_sale2, #gsm_modal10_row1_sale2, #gsm_modal11_row1_sale2, #gsm_modal12_row1_sale2, #gsm_modal13_row1_sale2, #gsm_modal14_row1_sale2, #gsm_modal15_row1_sale2 {
+    position: absolute;
+    width: 130px;
+    height: 128px;
+    left: 130px;
+    cursor: pointer;
+    display: none;
+}
+
+#gsm_modal1_row1_sale2:hover #gsm_modal1_row1_sale2_img, #gsm_modal2_row1_sale2:hover #gsm_modal2_row1_sale2_img, #gsm_modal3_row1_sale2:hover #gsm_modal3_row1_sale2_img, #gsm_modal4_row1_sale2:hover #gsm_modal4_row1_sale2_img, #gsm_modal5_row1_sale2:hover #gsm_modal5_row1_sale2_img, #gsm_modal6_row1_sale2:hover #gsm_modal6_row1_sale2_img, #gsm_modal7_row1_sale2:hover #gsm_modal7_row1_sale2_img, #gsm_modal8_row1_sale2:hover #gsm_modal8_row1_sale2_img, #gsm_modal9_row1_sale2:hover #gsm_modal9_row1_sale2_img, #gsm_modal10_row1_sale2:hover #gsm_modal10_row1_sale2_img, #gsm_modal11_row1_sale2:hover #gsm_modal11_row1_sale2_img, #gsm_modal12_row1_sale2:hover #gsm_modal12_row1_sale2_img, #gsm_modal13_row1_sale2:hover #gsm_modal13_row1_sale2_img, #gsm_modal14_row1_sale2:hover #gsm_modal14_row1_sale2_img, #gsm_modal15_row1_sale2:hover #gsm_modal15_row1_sale2_img {
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 100ms ease-in;
+    transform: scale(1.2);
+}
+
+#gsm_modal1_row1_sale2_title, #gsm_modal2_row1_sale2_title, #gsm_modal3_row1_sale2_title, #gsm_modal4_row1_sale2_title, #gsm_modal5_row1_sale2_title, #gsm_modal6_row1_sale2_title, #gsm_modal7_row1_sale2_title, #gsm_modal8_row1_sale2_title, #gsm_modal9_row1_sale2_title, #gsm_modal10_row1_sale2_title, #gsm_modal11_row1_sale2_title, #gsm_modal12_row1_sale2_title, #gsm_modal13_row1_sale2_title, #gsm_modal14_row1_sale2_title, #gsm_modal15_row1_sale2_title {
+    position: absolute;
+    width: 140px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 6px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    letter-spacing: 0.2px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+}
+
+#gsm_modal1_row1_sale2_price, #gsm_modal2_row1_sale2_price, #gsm_modal3_row1_sale2_price, #gsm_modal4_row1_sale2_price, #gsm_modal5_row1_sale2_price, #gsm_modal6_row1_sale2_price, #gsm_modal7_row1_sale2_price, #gsm_modal8_row1_sale2_price, #gsm_modal9_row1_sale2_price, #gsm_modal10_row1_sale2_price, #gsm_modal11_row1_sale2_price, #gsm_modal12_row1_sale2_price, #gsm_modal13_row1_sale2_price, #gsm_modal14_row1_sale2_price, #gsm_modal15_row1_sale2_price {
+    position: absolute;
+    width: 77px;
+    height: 60px;
+    left: 81px;
+    top: 46px;
+    z-index: 2;
+    background: url('../image/L2574_Fish_selling_prize.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row1_sale2_quantity, #gsm_modal2_row1_sale2_quantity, #gsm_modal3_row1_sale2_quantity, #gsm_modal4_row1_sale2_quantity, #gsm_modal5_row1_sale2_quantity, #gsm_modal6_row1_sale2_quantity, #gsm_modal7_row1_sale2_quantity, #gsm_modal8_row1_sale2_quantity, #gsm_modal9_row1_sale2_quantity, #gsm_modal10_row1_sale2_quantity, #gsm_modal11_row1_sale2_quantity, #gsm_modal12_row1_sale2_quantity, #gsm_modal13_row1_sale2_quantity, #gsm_modal14_row1_sale2_quantity, #gsm_modal15_row1_sale2_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 7px;
+    right: 14px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row2_gif, #gsm_modal2_row2_gif, #gsm_modal3_row2_gif, #gsm_modal4_row2_gif, #gsm_modal5_row2_gif, #gsm_modal6_row2_gif, #gsm_modal7_row2_gif, #gsm_modal8_row2_gif, #gsm_modal9_row2_gif, #gsm_modal10_row2_gif, #gsm_modal11_row2_gif, #gsm_modal12_row2_gif, #gsm_modal13_row2_gif, #gsm_modal14_row2_gif, #gsm_modal15_row2_gif {
+    position: absolute;
+    width: 82px;
+    height: 128px;
+    bottom: 11px;
+    left: 64px;
+    background: url('../image/L2574_Actor_Rani.gif') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row2_wanted_container, #gsm_modal2_row2_wanted_container, #gsm_modal3_row2_wanted_container, #gsm_modal4_row2_wanted_container, #gsm_modal5_row2_wanted_container, #gsm_modal6_row2_wanted_container, #gsm_modal7_row2_wanted_container, #gsm_modal8_row2_wanted_container, #gsm_modal9_row2_wanted_container, #gsm_modal10_row2_wanted_container, #gsm_modal11_row2_wanted_container, #gsm_modal12_row2_wanted_container, #gsm_modal13_row2_wanted_container, #gsm_modal14_row2_wanted_container, #gsm_modal15_row2_wanted_container {
+    position: absolute;
+    width: 294px;
+    height: 130px;
+    left: 150px;
+    bottom: 21px;
+}
+
+#gsm_modal1_row2_wanted1, #gsm_modal2_row2_wanted1, #gsm_modal3_row2_wanted1, #gsm_modal4_row2_wanted1, #gsm_modal5_row2_wanted1, #gsm_modal6_row2_wanted1, #gsm_modal7_row2_wanted1, #gsm_modal8_row2_wanted1, #gsm_modal9_row2_wanted1, #gsm_modal10_row2_wanted1, #gsm_modal11_row2_wanted1, #gsm_modal12_row2_wanted1, #gsm_modal13_row2_wanted1, #gsm_modal14_row2_wanted1, #gsm_modal15_row2_wanted1 {
+    position: absolute;
+    width: 135px;
+    height: 110px;
+    bottom: 8px;
+    background: url('../image/L2574_Fish_bubble.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row2_wanted1_title, #gsm_modal2_row2_wanted1_title, #gsm_modal3_row2_wanted1_title, #gsm_modal4_row2_wanted1_title, #gsm_modal5_row2_wanted1_title, #gsm_modal6_row2_wanted1_title, #gsm_modal7_row2_wanted1_title, #gsm_modal8_row2_wanted1_title, #gsm_modal9_row2_wanted1_title, #gsm_modal10_row2_wanted1_title, #gsm_modal11_row2_wanted1_title, #gsm_modal12_row2_wanted1_title, #gsm_modal13_row2_wanted1_title, #gsm_modal14_row2_wanted1_title, #gsm_modal15_row2_wanted1_title {
+    position: absolute;
+    width: 132px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 14px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+#gsm_modal1_row2_wanted1_price, #gsm_modal2_row2_wanted1_price, #gsm_modal3_row2_wanted1_price, #gsm_modal4_row2_wanted1_price, #gsm_modal5_row2_wanted1_price, #gsm_modal6_row2_wanted1_price, #gsm_modal7_row2_wanted1_price, #gsm_modal8_row2_wanted1_price, #gsm_modal9_row2_wanted1_price, #gsm_modal10_row2_wanted1_price, #gsm_modal11_row2_wanted1_price, #gsm_modal12_row2_wanted1_price, #gsm_modal13_row2_wanted1_price, #gsm_modal14_row2_wanted1_price, #gsm_modal15_row2_wanted1_price {
+    position: absolute;
+    width: 77px;
+    height: 60px;
+    left: 98px;
+    top: 46px;
+    z-index: 2;
+    background: url(../image/L2574_Fish_wanted_prize.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row2_wanted1_quantity, #gsm_modal2_row2_wanted1_quantity, #gsm_modal3_row2_wanted1_quantity, #gsm_modal4_row2_wanted1_quantity, #gsm_modal5_row2_wanted1_quantity, #gsm_modal6_row2_wanted1_quantity, #gsm_modal7_row2_wanted1_quantity, #gsm_modal8_row2_wanted1_quantity, #gsm_modal9_row2_wanted1_quantity, #gsm_modal10_row2_wanted1_quantity, #gsm_modal11_row2_wanted1_quantity, #gsm_modal12_row2_wanted1_quantity, #gsm_modal13_row2_wanted1_quantity, #gsm_modal14_row2_wanted1_quantity, #gsm_modal15_row2_wanted1_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 6px;
+    right: 13px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row2_wanted2, #gsm_modal2_row2_wanted2, #gsm_modal3_row2_wanted2, #gsm_modal4_row2_wanted2, #gsm_modal5_row2_wanted2, #gsm_modal6_row2_wanted2, #gsm_modal7_row2_wanted2, #gsm_modal8_row2_wanted2, #gsm_modal9_row2_wanted2, #gsm_modal10_row2_wanted2, #gsm_modal11_row2_wanted2, #gsm_modal12_row2_wanted2, #gsm_modal13_row2_wanted2, #gsm_modal14_row2_wanted2, #gsm_modal15_row2_wanted2 {
+    position: absolute;
+    width: 135px;
+    height: 110px;
+    bottom: 8px;
+    left: 144px;
+    background: url('../image/L2574_Fish_bubble.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row2_wanted2_title, #gsm_modal2_row2_wanted2_title, #gsm_modal3_row2_wanted2_title, #gsm_modal4_row2_wanted2_title, #gsm_modal5_row2_wanted2_title, #gsm_modal6_row2_wanted2_title, #gsm_modal7_row2_wanted2_title, #gsm_modal8_row2_wanted2_title, #gsm_modal9_row2_wanted2_title, #gsm_modal10_row2_wanted2_title, #gsm_modal11_row2_wanted2_title, #gsm_modal12_row2_wanted2_title, #gsm_modal13_row2_wanted2_title, #gsm_modal14_row2_wanted2_title, #gsm_modal15_row2_wanted2_title {
+    position: absolute;
+    width: 132px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 14px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+#gsm_modal1_row2_wanted2_price, #gsm_modal2_row2_wanted2_price, #gsm_modal3_row2_wanted2_price, #gsm_modal4_row2_wanted2_price, #gsm_modal5_row2_wanted2_price, #gsm_modal6_row2_wanted2_price, #gsm_modal7_row2_wanted2_price, #gsm_modal8_row2_wanted2_price, #gsm_modal9_row2_wanted2_price, #gsm_modal10_row2_wanted2_price, #gsm_modal11_row2_wanted2_price, #gsm_modal12_row2_wanted2_price, #gsm_modal13_row2_wanted2_price, #gsm_modal14_row2_wanted2_price, #gsm_modal15_row2_wanted2_price {
+    position: absolute;
+    width: 73px;
+    height: 60px;
+    left: 95px;
+    top: 46px;
+    z-index: 2;
+    background: url(../image/L2574_Fish_wanted_prize.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row2_wanted2_quantity, #gsm_modal2_row2_wanted2_quantity, #gsm_modal3_row2_wanted2_quantity, #gsm_modal4_row2_wanted2_quantity, #gsm_modal5_row2_wanted2_quantity, #gsm_modal6_row2_wanted2_quantity, #gsm_modal7_row2_wanted2_quantity, #gsm_modal8_row2_wanted2_quantity, #gsm_modal9_row2_wanted2_quantity, #gsm_modal10_row2_wanted2_quantity, #gsm_modal11_row2_wanted2_quantity, #gsm_modal12_row2_wanted2_quantity, #gsm_modal13_row2_wanted2_quantity, #gsm_modal14_row2_wanted2_quantity, #gsm_modal15_row2_wanted2_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 6px;
+    right: 14px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row2_sale_container, #gsm_modal2_row2_sale_container, #gsm_modal3_row2_sale_container, #gsm_modal4_row2_sale_container, #gsm_modal5_row2_sale_container, #gsm_modal6_row2_sale_container, #gsm_modal7_row2_sale_container, #gsm_modal8_row2_sale_container, #gsm_modal9_row2_sale_container, #gsm_modal10_row2_sale_container, #gsm_modal11_row2_sale_container, #gsm_modal12_row2_sale_container, #gsm_modal13_row2_sale_container, #gsm_modal14_row2_sale_container, #gsm_modal15_row2_sale_container {
+    position: absolute;
+    width: 277px;
+    height: 130px;
+    right: 11px;
+    bottom: 11px;
+}
+
+#gsm_modal1_row2_sale1, #gsm_modal2_row2_sale1, #gsm_modal3_row2_sale1, #gsm_modal4_row2_sale1, #gsm_modal5_row2_sale1, #gsm_modal6_row2_sale1, #gsm_modal7_row2_sale1, #gsm_modal8_row2_sale1, #gsm_modal9_row2_sale1, #gsm_modal10_row2_sale1, #gsm_modal11_row2_sale1, #gsm_modal12_row2_sale1, #gsm_modal13_row2_sale1, #gsm_modal14_row2_sale1, #gsm_modal15_row2_sale1 {
+    position: absolute;
+    width: 130px;
+    height: 128px;
+    cursor: pointer;
+}
+
+#gsm_modal1_row2_sale1:hover #gsm_modal1_row2_sale1_img, #gsm_modal2_row2_sale1:hover #gsm_modal2_row2_sale1_img, #gsm_modal3_row2_sale1:hover #gsm_modal3_row2_sale1_img, #gsm_modal4_row2_sale1:hover #gsm_modal4_row2_sale1_img, #gsm_modal5_row2_sale1:hover #gsm_modal5_row2_sale1_img, #gsm_modal6_row2_sale1:hover #gsm_modal6_row2_sale1_img, #gsm_modal7_row2_sale1:hover #gsm_modal7_row2_sale1_img, #gsm_modal8_row2_sale1:hover #gsm_modal8_row2_sale1_img, #gsm_modal9_row2_sale1:hover #gsm_modal9_row2_sale1_img, #gsm_modal10_row2_sale1:hover #gsm_modal10_row2_sale1_img, #gsm_modal11_row2_sale1:hover #gsm_modal11_row2_sale1_img, #gsm_modal12_row2_sale1:hover #gsm_modal12_row2_sale1_img, #gsm_modal13_row2_sale1:hover #gsm_modal13_row2_sale1_img, #gsm_modal14_row2_sale1:hover #gsm_modal14_row2_sale1_img, #gsm_modal15_row2_sale1:hover #gsm_modal15_row2_sale1_img {
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 100ms ease-in;
+    transform: scale(1.2);
+}
+
+#gsm_modal1_row2_sale1_title, #gsm_modal2_row2_sale1_title, #gsm_modal3_row2_sale1_title, #gsm_modal4_row2_sale1_title, #gsm_modal5_row2_sale1_title, #gsm_modal6_row2_sale1_title, #gsm_modal7_row2_sale1_title, #gsm_modal8_row2_sale1_title, #gsm_modal9_row2_sale1_title, #gsm_modal10_row2_sale1_title, #gsm_modal11_row2_sale1_title, #gsm_modal12_row2_sale1_title, #gsm_modal13_row2_sale1_title, #gsm_modal14_row2_sale1_title, #gsm_modal15_row2_sale1_title {
+    position: absolute;
+    width: 140px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 6px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    letter-spacing: 0.2px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+}
+
+#gsm_modal1_row2_sale1_price, #gsm_modal2_row2_sale1_price, #gsm_modal3_row2_sale1_price, #gsm_modal4_row2_sale1_price, #gsm_modal5_row2_sale1_price, #gsm_modal6_row2_sale1_price, #gsm_modal7_row2_sale1_price, #gsm_modal8_row2_sale1_price, #gsm_modal9_row2_sale1_price, #gsm_modal10_row2_sale1_price, #gsm_modal11_row2_sale1_price, #gsm_modal12_row2_sale1_price, #gsm_modal13_row2_sale1_price, #gsm_modal14_row2_sale1_price, #gsm_modal15_row2_sale1_price {
+    position: absolute;
+    width: 77px;
+    height: 60px;
+    left: 81px;
+    top: 46px;
+    z-index: 2;
+    background: url('../image/L2574_Fish_selling_prize.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row2_sale1_quantity, #gsm_modal2_row2_sale1_quantity, #gsm_modal3_row2_sale1_quantity, #gsm_modal4_row2_sale1_quantity, #gsm_modal5_row2_sale1_quantity, #gsm_modal6_row2_sale1_quantity, #gsm_modal7_row2_sale1_quantity, #gsm_modal8_row2_sale1_quantity, #gsm_modal9_row2_sale1_quantity, #gsm_modal10_row2_sale1_quantity, #gsm_modal11_row2_sale1_quantity, #gsm_modal12_row2_sale1_quantity, #gsm_modal13_row2_sale1_quantity, #gsm_modal14_row2_sale1_quantity, #gsm_modal15_row2_sale1_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 7px;
+    right: 14px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row2_sale2, #gsm_modal2_row2_sale2, #gsm_modal3_row2_sale2, #gsm_modal4_row2_sale2, #gsm_modal5_row2_sale2, #gsm_modal6_row2_sale2, #gsm_modal7_row2_sale2, #gsm_modal8_row2_sale2, #gsm_modal9_row2_sale2, #gsm_modal10_row2_sale2, #gsm_modal11_row2_sale2, #gsm_modal12_row2_sale2, #gsm_modal13_row2_sale2, #gsm_modal14_row2_sale2, #gsm_modal15_row2_sale2 {
+    position: absolute;
+    width: 130px;
+    height: 128px;
+    left: 130px;
+    cursor: pointer;
+}
+
+#gsm_modal1_row2_sale2:hover #gsm_modal1_row2_sale2_img, #gsm_modal2_row2_sale2:hover #gsm_modal2_row2_sale2_img, #gsm_modal3_row2_sale2:hover #gsm_modal3_row2_sale2_img, #gsm_modal4_row2_sale2:hover #gsm_modal4_row2_sale2_img, #gsm_modal5_row2_sale2:hover #gsm_modal5_row2_sale2_img, #gsm_modal6_row2_sale2:hover #gsm_modal6_row2_sale2_img, #gsm_modal7_row2_sale2:hover #gsm_modal7_row2_sale2_img, #gsm_modal8_row2_sale2:hover #gsm_modal8_row2_sale2_img, #gsm_modal9_row2_sale2:hover #gsm_modal9_row2_sale2_img, #gsm_modal10_row2_sale2:hover #gsm_modal10_row2_sale2_img, #gsm_modal11_row2_sale2:hover #gsm_modal11_row2_sale2_img, #gsm_modal12_row2_sale2:hover #gsm_modal12_row2_sale2_img, #gsm_modal13_row2_sale2:hover #gsm_modal13_row2_sale2_img, #gsm_modal14_row2_sale2:hover #gsm_modal14_row2_sale2_img, #gsm_modal15_row2_sale2:hover #gsm_modal15_row2_sale2_img {
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 100ms ease-in;
+    transform: scale(1.2);
+}
+
+#gsm_modal1_row2_sale2_title, #gsm_modal2_row2_sale2_title, #gsm_modal3_row2_sale2_title, #gsm_modal4_row2_sale2_title, #gsm_modal5_row2_sale2_title, #gsm_modal6_row2_sale2_title, #gsm_modal7_row2_sale2_title, #gsm_modal8_row2_sale2_title, #gsm_modal9_row2_sale2_title, #gsm_modal10_row2_sale2_title, #gsm_modal11_row2_sale2_title, #gsm_modal12_row2_sale2_title, #gsm_modal13_row2_sale2_title, #gsm_modal14_row2_sale2_title, #gsm_modal15_row2_sale2_title {
+    position: absolute;
+    width: 140px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 6px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    letter-spacing: 0.2px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+}
+
+#gsm_modal1_row2_sale2_price, #gsm_modal2_row2_sale2_price, #gsm_modal3_row2_sale2_price, #gsm_modal4_row2_sale2_price, #gsm_modal5_row2_sale2_price, #gsm_modal6_row2_sale2_price, #gsm_modal7_row2_sale2_price, #gsm_modal8_row2_sale2_price, #gsm_modal9_row2_sale2_price, #gsm_modal10_row2_sale2_price, #gsm_modal11_row2_sale2_price, #gsm_modal12_row2_sale2_price, #gsm_modal13_row2_sale2_price, #gsm_modal14_row2_sale2_price, #gsm_modal15_row2_sale2_price {
+    position: absolute;
+    width: 77px;
+    height: 60px;
+    left: 81px;
+    top: 46px;
+    z-index: 2;
+    background: url('../image/L2574_Fish_selling_prize.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row2_sale2_quantity, #gsm_modal2_row2_sale2_quantity, #gsm_modal3_row2_sale2_quantity, #gsm_modal4_row2_sale2_quantity, #gsm_modal5_row2_sale2_quantity, #gsm_modal6_row2_sale2_quantity, #gsm_modal7_row2_sale2_quantity, #gsm_modal8_row2_sale2_quantity, #gsm_modal9_row2_sale2_quantity, #gsm_modal10_row2_sale2_quantity, #gsm_modal11_row2_sale2_quantity, #gsm_modal12_row2_sale2_quantity, #gsm_modal13_row2_sale2_quantity, #gsm_modal14_row2_sale2_quantity, #gsm_modal15_row2_sale2_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 7px;
+    right: 14px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row3_gif, #gsm_modal2_row3_gif, #gsm_modal3_row3_gif, #gsm_modal4_row3_gif, #gsm_modal5_row3_gif, #gsm_modal6_row3_gif, #gsm_modal7_row3_gif, #gsm_modal8_row3_gif, #gsm_modal9_row3_gif, #gsm_modal10_row3_gif, #gsm_modal11_row3_gif, #gsm_modal12_row3_gif, #gsm_modal13_row3_gif, #gsm_modal14_row3_gif, #gsm_modal15_row3_gif {
+    position: absolute;
+    width: 76px;
+    height: 133px;
+    bottom: 11px;
+    left: 64px;
+    background: url('../image/L2574_Actor_Rani.gif') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row3_wanted_container, #gsm_modal2_row3_wanted_container, #gsm_modal3_row3_wanted_container, #gsm_modal4_row3_wanted_container, #gsm_modal5_row3_wanted_container, #gsm_modal6_row3_wanted_container, #gsm_modal7_row3_wanted_container, #gsm_modal8_row3_wanted_container, #gsm_modal9_row3_wanted_container, #gsm_modal10_row3_wanted_container, #gsm_modal11_row3_wanted_container, #gsm_modal12_row3_wanted_container, #gsm_modal13_row3_wanted_container, #gsm_modal14_row3_wanted_container, #gsm_modal15_row3_wanted_container {
+    position: absolute;
+    width: 294px;
+    height: 130px;
+    left: 150px;
+    bottom: 21px;
+}
+
+#gsm_modal1_row3_wanted1, #gsm_modal2_row3_wanted1, #gsm_modal3_row3_wanted1, #gsm_modal4_row3_wanted1, #gsm_modal5_row3_wanted1, #gsm_modal6_row3_wanted1, #gsm_modal7_row3_wanted1, #gsm_modal8_row3_wanted1, #gsm_modal9_row3_wanted1, #gsm_modal10_row3_wanted1, #gsm_modal11_row3_wanted1, #gsm_modal12_row3_wanted1, #gsm_modal13_row3_wanted1, #gsm_modal14_row3_wanted1, #gsm_modal15_row3_wanted1 {
+    position: absolute;
+    width: 135px;
+    height: 110px;
+    bottom: 8px;
+    background: url('../image/L2574_Fish_bubble.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row3_wanted1_title, #gsm_modal2_row3_wanted1_title, #gsm_modal3_row3_wanted1_title, #gsm_modal4_row3_wanted1_title, #gsm_modal5_row3_wanted1_title, #gsm_modal6_row3_wanted1_title, #gsm_modal7_row3_wanted1_title, #gsm_modal8_row3_wanted1_title, #gsm_modal9_row3_wanted1_title, #gsm_modal10_row3_wanted1_title, #gsm_modal11_row3_wanted1_title, #gsm_modal12_row3_wanted1_title, #gsm_modal13_row3_wanted1_title, #gsm_modal14_row3_wanted1_title, #gsm_modal15_row3_wanted1_title {
+    position: absolute;
+    width: 132px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 14px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+#gsm_modal1_row3_wanted1_price, #gsm_modal2_row3_wanted1_price, #gsm_modal3_row3_wanted1_price, #gsm_modal4_row3_wanted1_price, #gsm_modal5_row3_wanted1_price, #gsm_modal6_row3_wanted1_price, #gsm_modal7_row3_wanted1_price, #gsm_modal8_row3_wanted1_price, #gsm_modal9_row3_wanted1_price, #gsm_modal10_row3_wanted1_price, #gsm_modal11_row3_wanted1_price, #gsm_modal12_row3_wanted1_price, #gsm_modal13_row3_wanted1_price, #gsm_modal14_row3_wanted1_price, #gsm_modal15_row3_wanted1_price {
+    position: absolute;
+    width: 77px;
+    height: 60px;
+    left: 98px;
+    top: 46px;
+    z-index: 2;
+    background: url(../image/L2574_Fish_wanted_prize.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row3_wanted1_quantity, #gsm_modal2_row3_wanted1_quantity, #gsm_modal3_row3_wanted1_quantity, #gsm_modal4_row3_wanted1_quantity, #gsm_modal5_row3_wanted1_quantity, #gsm_modal6_row3_wanted1_quantity, #gsm_modal7_row3_wanted1_quantity, #gsm_modal8_row3_wanted1_quantity, #gsm_modal9_row3_wanted1_quantity, #gsm_modal10_row3_wanted1_quantity, #gsm_modal11_row3_wanted1_quantity, #gsm_modal12_row3_wanted1_quantity, #gsm_modal13_row3_wanted1_quantity, #gsm_modal14_row3_wanted1_quantity, #gsm_modal15_row3_wanted1_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 6px;
+    right: 13px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row3_wanted2, #gsm_modal2_row3_wanted2, #gsm_modal3_row3_wanted2, #gsm_modal4_row3_wanted2, #gsm_modal5_row3_wanted2, #gsm_modal6_row3_wanted2, #gsm_modal7_row3_wanted2, #gsm_modal8_row3_wanted2, #gsm_modal9_row3_wanted2, #gsm_modal10_row3_wanted2, #gsm_modal11_row3_wanted2, #gsm_modal12_row3_wanted2, #gsm_modal13_row3_wanted2, #gsm_modal14_row3_wanted2, #gsm_modal15_row3_wanted2 {
+    position: absolute;
+    width: 135px;
+    height: 110px;
+    bottom: 8px;
+    left: 144px;
+    background: url('../image/L2574_Fish_bubble.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row3_wanted2_title, #gsm_modal2_row3_wanted2_title, #gsm_modal3_row3_wanted2_title, #gsm_modal4_row3_wanted2_title, #gsm_modal5_row3_wanted2_title, #gsm_modal6_row3_wanted2_title, #gsm_modal7_row3_wanted2_title, #gsm_modal8_row3_wanted2_title, #gsm_modal9_row3_wanted2_title, #gsm_modal10_row3_wanted2_title, #gsm_modal11_row3_wanted2_title, #gsm_modal12_row3_wanted2_title, #gsm_modal13_row3_wanted2_title, #gsm_modal14_row3_wanted2_title, #gsm_modal15_row3_wanted2_title {
+    position: absolute;
+    width: 132px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 14px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+#gsm_modal1_row3_wanted2_price, #gsm_modal2_row3_wanted2_price, #gsm_modal3_row3_wanted2_price, #gsm_modal4_row3_wanted2_price, #gsm_modal5_row3_wanted2_price, #gsm_modal6_row3_wanted2_price, #gsm_modal7_row3_wanted2_price, #gsm_modal8_row3_wanted2_price, #gsm_modal9_row3_wanted2_price, #gsm_modal10_row3_wanted2_price, #gsm_modal11_row3_wanted2_price, #gsm_modal12_row3_wanted2_price, #gsm_modal13_row3_wanted2_price, #gsm_modal14_row3_wanted2_price, #gsm_modal15_row3_wanted2_price {
+    position: absolute;
+    width: 73px;
+    height: 60px;
+    left: 95px;
+    top: 46px;
+    z-index: 2;
+    background: url(../image/L2574_Fish_wanted_prize.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row3_wanted2_quantity, #gsm_modal2_row3_wanted2_quantity, #gsm_modal3_row3_wanted2_quantity, #gsm_modal4_row3_wanted2_quantity, #gsm_modal5_row3_wanted2_quantity, #gsm_modal6_row3_wanted2_quantity, #gsm_modal7_row3_wanted2_quantity, #gsm_modal8_row3_wanted2_quantity, #gsm_modal9_row3_wanted2_quantity, #gsm_modal10_row3_wanted2_quantity, #gsm_modal11_row3_wanted2_quantity, #gsm_modal12_row3_wanted2_quantity, #gsm_modal13_row3_wanted2_quantity, #gsm_modal14_row3_wanted2_quantity, #gsm_modal15_row3_wanted2_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 6px;
+    right: 14px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row3_sale_container, #gsm_modal2_row3_sale_container, #gsm_modal3_row3_sale_container, #gsm_modal4_row3_sale_container, #gsm_modal5_row3_sale_container, #gsm_modal6_row3_sale_container, #gsm_modal7_row3_sale_container, #gsm_modal8_row3_sale_container, #gsm_modal9_row3_sale_container, #gsm_modal10_row3_sale_container, #gsm_modal11_row3_sale_container, #gsm_modal12_row3_sale_container, #gsm_modal13_row3_sale_container, #gsm_modal14_row3_sale_container, #gsm_modal15_row3_sale_container {
+    position: absolute;
+    width: 277px;
+    height: 130px;
+    right: 11px;
+    bottom: 11px;
+}
+
+#gsm_modal1_row3_sale1, #gsm_modal2_row3_sale1, #gsm_modal3_row3_sale1, #gsm_modal4_row3_sale1, #gsm_modal5_row3_sale1, #gsm_modal6_row3_sale1, #gsm_modal7_row3_sale1, #gsm_modal8_row3_sale1, #gsm_modal9_row3_sale1, #gsm_modal10_row3_sale1, #gsm_modal11_row3_sale1, #gsm_modal12_row3_sale1, #gsm_modal13_row3_sale1, #gsm_modal14_row3_sale1, #gsm_modal15_row3_sale1 {
+    position: absolute;
+    width: 130px;
+    height: 128px;
+    cursor: pointer;
+}
+
+#gsm_modal1_row3_sale1:hover #gsm_modal1_row3_sale1_img, #gsm_modal2_row3_sale1:hover #gsm_modal2_row3_sale1_img, #gsm_modal3_row3_sale1:hover #gsm_modal3_row3_sale1_img, #gsm_modal4_row3_sale1:hover #gsm_modal4_row3_sale1_img, #gsm_modal5_row3_sale1:hover #gsm_modal5_row3_sale1_img, #gsm_modal6_row3_sale1:hover #gsm_modal6_row3_sale1_img, #gsm_modal7_row3_sale1:hover #gsm_modal7_row3_sale1_img, #gsm_modal8_row3_sale1:hover #gsm_modal8_row3_sale1_img, #gsm_modal9_row3_sale1:hover #gsm_modal9_row3_sale1_img, #gsm_modal10_row3_sale1:hover #gsm_modal10_row3_sale1_img, #gsm_modal11_row3_sale1:hover #gsm_modal11_row3_sale1_img, #gsm_modal12_row3_sale1:hover #gsm_modal12_row3_sale1_img, #gsm_modal13_row3_sale1:hover #gsm_modal13_row3_sale1_img, #gsm_modal14_row3_sale1:hover #gsm_modal14_row3_sale1_img, #gsm_modal15_row3_sale1:hover #gsm_modal15_row3_sale1_img {
+    -webkit-transition: all 300ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 100ms ease-in;
+    transform: scale(1.2);
+}
+
+#gsm_modal1_row3_sale1_title, #gsm_modal2_row3_sale1_title, #gsm_modal3_row3_sale1_title, #gsm_modal4_row3_sale1_title, #gsm_modal5_row3_sale1_title, #gsm_modal6_row3_sale1_title, #gsm_modal7_row3_sale1_title, #gsm_modal8_row3_sale1_title, #gsm_modal9_row3_sale1_title, #gsm_modal10_row3_sale1_title, #gsm_modal11_row3_sale1_title, #gsm_modal12_row3_sale1_title, #gsm_modal13_row3_sale1_title, #gsm_modal14_row3_sale1_title, #gsm_modal15_row3_sale1_title {
+    position: absolute;
+    width: 140px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 6px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    letter-spacing: 0.2px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+}
+
+#gsm_modal1_row3_sale1_price, #gsm_modal2_row3_sale1_price, #gsm_modal3_row3_sale1_price, #gsm_modal4_row3_sale1_price, #gsm_modal5_row3_sale1_price, #gsm_modal6_row3_sale1_price, #gsm_modal7_row3_sale1_price, #gsm_modal8_row3_sale1_price, #gsm_modal9_row3_sale1_price, #gsm_modal10_row3_sale1_price, #gsm_modal11_row3_sale1_price, #gsm_modal12_row3_sale1_price, #gsm_modal13_row3_sale1_price, #gsm_modal14_row3_sale1_price, #gsm_modal15_row3_sale1_price {
+    position: absolute;
+    width: 77px;
+    height: 60px;
+    left: 81px;
+    top: 46px;
+    z-index: 2;
+    background: url('../image/L2574_Fish_selling_prize.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row3_sale1_quantity, #gsm_modal2_row3_sale1_quantity, #gsm_modal3_row3_sale1_quantity, #gsm_modal4_row3_sale1_quantity, #gsm_modal5_row3_sale1_quantity, #gsm_modal6_row3_sale1_quantity, #gsm_modal7_row3_sale1_quantity, #gsm_modal8_row3_sale1_quantity, #gsm_modal9_row3_sale1_quantity, #gsm_modal10_row3_sale1_quantity, #gsm_modal11_row3_sale1_quantity, #gsm_modal12_row3_sale1_quantity, #gsm_modal13_row3_sale1_quantity, #gsm_modal14_row3_sale1_quantity, #gsm_modal15_row3_sale1_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 7px;
+    right: 14px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row3_sale2, #gsm_modal2_row3_sale2, #gsm_modal3_row3_sale2, #gsm_modal4_row3_sale2, #gsm_modal5_row3_sale2, #gsm_modal6_row3_sale2, #gsm_modal7_row3_sale2, #gsm_modal8_row3_sale2, #gsm_modal9_row3_sale2, #gsm_modal10_row3_sale2, #gsm_modal11_row3_sale2, #gsm_modal12_row3_sale2, #gsm_modal13_row3_sale2, #gsm_modal14_row3_sale2, #gsm_modal15_row3_sale2 {
+    position: absolute;
+    width: 130px;
+    height: 128px;
+    left: 130px;
+    cursor: pointer;
+}
+
+#gsm_modal1_row3_sale2:hover #gsm_modal1_row3_sale2_img, #gsm_modal2_row3_sale2:hover #gsm_modal2_row3_sale2_img, #gsm_modal3_row3_sale2:hover #gsm_modal3_row3_sale2_img, #gsm_modal4_row3_sale2:hover #gsm_modal4_row3_sale2_img, #gsm_modal5_row3_sale2:hover #gsm_modal5_row3_sale2_img, #gsm_modal6_row3_sale2:hover #gsm_modal6_row3_sale2_img, #gsm_modal7_row3_sale2:hover #gsm_modal7_row3_sale2_img, #gsm_modal8_row3_sale2:hover #gsm_modal8_row3_sale2_img, #gsm_modal9_row3_sale2:hover #gsm_modal9_row3_sale2_img, #gsm_modal10_row3_sale2:hover #gsm_modal10_row3_sale2_img, #gsm_modal11_row3_sale2:hover #gsm_modal11_row3_sale2_img, #gsm_modal12_row3_sale2:hover #gsm_modal12_row3_sale2_img, #gsm_modal13_row3_sale2:hover #gsm_modal13_row3_sale2_img, #gsm_modal14_row3_sale2:hover #gsm_modal14_row3_sale2_img, #gsm_modal15_row3_sale2:hover #gsm_modal15_row3_sale2_img {
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1.2);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 100ms ease-in;
+    transform: scale(1.2);
+}
+
+#gsm_modal1_row3_sale2_title, #gsm_modal2_row3_sale2_title, #gsm_modal3_row3_sale2_title, #gsm_modal4_row3_sale2_title, #gsm_modal5_row3_sale2_title, #gsm_modal6_row3_sale2_title, #gsm_modal7_row3_sale2_title, #gsm_modal8_row3_sale2_title, #gsm_modal9_row3_sale2_title, #gsm_modal10_row3_sale2_title, #gsm_modal11_row3_sale2_title, #gsm_modal12_row3_sale2_title, #gsm_modal13_row3_sale2_title, #gsm_modal14_row3_sale2_title, #gsm_modal15_row3_sale2_title {
+    position: absolute;
+    width: 140px;
+    height: 22px;
+    background: rgba(255, 255, 255, .7);
+    left: 6px;
+    padding: 3px;
+    top: 96px;
+    color: #333333;
+    border-radius: 6px;
+    letter-spacing: 0.2px;
+    font-size: 22px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+}
+
+#gsm_modal1_row3_sale2_price, #gsm_modal2_row3_sale2_price, #gsm_modal3_row3_sale2_price, #gsm_modal4_row3_sale2_price, #gsm_modal5_row3_sale2_price, #gsm_modal6_row3_sale2_price, #gsm_modal7_row3_sale2_price, #gsm_modal8_row3_sale2_price, #gsm_modal9_row3_sale2_price, #gsm_modal10_row3_sale2_price, #gsm_modal11_row3_sale2_price, #gsm_modal12_row3_sale2_price, #gsm_modal13_row3_sale2_price, #gsm_modal14_row3_sale2_price, #gsm_modal15_row3_sale2_price {
+    position: absolute;
+    width: 77px;
+    height: 60px;
+    left: 81px;
+    top: 46px;
+    z-index: 2;
+    background: url('../image/L2574_Fish_selling_prize.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -webkit-transform: skew(-1deg, 1deg);
+    -moz-transform: skew(-1deg, 1deg);
+    -o-transform: skew(-1deg, 1deg);
+    -ms-transform: skew(-1deg, 1deg);
+    transform: skew(-1deg, 1deg);
+}
+
+#gsm_modal1_row3_sale2_quantity, #gsm_modal2_row3_sale2_quantity, #gsm_modal3_row3_sale2_quantity, #gsm_modal4_row3_sale2_quantity, #gsm_modal5_row3_sale2_quantity, #gsm_modal6_row3_sale2_quantity, #gsm_modal7_row3_sale2_quantity, #gsm_modal8_row3_sale2_quantity, #gsm_modal9_row3_sale2_quantity, #gsm_modal10_row3_sale2_quantity, #gsm_modal11_row3_sale2_quantity, #gsm_modal12_row3_sale2_quantity, #gsm_modal13_row3_sale2_quantity, #gsm_modal14_row3_sale2_quantity, #gsm_modal15_row3_sale2_quantity {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    top: 7px;
+    right: 14px;
+    padding-top: 7px;
+    font-weight: bold;
+    text-align: center;
+    background: url('../image/L2574_Fish_quantity.png') no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row1_wanted1_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row1_wanted2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row1_sale1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 16px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal1_row1_sale2_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 18px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal1_row2_wanted1_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row2_wanted2_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 30px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row2_sale1_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 11px;
+    left: 15px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal1_row2_sale2_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 18px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal1_row3_wanted1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row3_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal1_row3_sale1_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 21px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal1_row3_sale2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 18px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal2_row1_wanted1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 25px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal2_row1_wanted2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal2_row1_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal2_row1_sale2_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal2_row2_wanted1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal2_row2_wanted2_img {
+    position: absolute;
+    width: 107px;
+    height: 71px;
+    top: 31px;
+    left: 29px;
+    background: url('../image/L2574_Fish_JumperCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal2_row2_sale1_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal2_row2_sale2_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal2_row3_wanted1_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 26px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal2_row3_wanted2_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 30px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal2_row3_sale1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 16px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal2_row3_sale2_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal3_row1_wanted1_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 28px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal3_row1_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 25px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal3_row1_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal3_row1_sale2_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal3_row2_wanted1_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal3_row2_wanted2_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal3_row2_sale1_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal3_row2_sale2_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 21px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal3_row3_wanted1_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal3_row3_wanted2_img {
+    position: absolute;
+    width: 107px;
+    height: 71px;
+    top: 31px;
+    left: 29px;
+    background: url('../image/L2574_Fish_JumperCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal3_row3_sale1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 16px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal3_row3_sale2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal4_row1_wanted1_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal4_row1_wanted2_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 30px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal4_row1_sale1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 16px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal4_row1_sale2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 23px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal4_row2_wanted1_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+}
+
+#gsm_modal4_row2_wanted2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal4_row2_sale1_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 20px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal4_row2_sale2_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal4_row3_wanted1_img {
+    position: absolute;
+    width: 107px;
+    height: 71px;
+    top: 31px;
+    left: 29px;
+    background: url('../image/L2574_Fish_JumperCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal4_row3_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal4_row3_sale1_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 18px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal4_row3_sale2_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal5_row1_wanted1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal5_row1_wanted2_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 26px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal5_row1_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal5_row1_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal5_row2_wanted1_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal5_row2_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 26px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal5_row2_sale1_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 18px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal5_row2_sale2_img {
+    position: absolute;
+    width: 107px;
+    height: 71px;
+    top: 31px;
+    left: 29px;
+    background: url('../image/L2574_Fish_JumperCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal5_row3_wanted1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal5_row3_wanted2_img {
+    position: absolute;
+    width: 107px;
+    height: 71px;
+    top: 31px;
+    left: 29px;
+    background: url('../image/L2574_Fish_JumperCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal5_row3_sale1_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 18px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal5_row3_sale2_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal6_row1_wanted1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 27px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal6_row1_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal6_row1_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal6_row1_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal6_row2_wanted1_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal6_row2_wanted2_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal6_row2_sale1_img {
+    position: absolute;
+    width: 107px;
+    height: 71px;
+    top: 31px;
+    left: 29px;
+    background: url('../image/L2574_Fish_JumperCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal6_row2_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal6_row3_wanted1_img {
+    position: absolute;
+    width: 107px;
+    height: 71px;
+    top: 31px;
+    left: 29px;
+    background: url('../image/L2574_Fish_JumperCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal6_row3_wanted2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal6_row3_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 18px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal6_row3_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 20px;
+    cursor: pointer;
+    background: url(../image/L2574_Fish_Vamper.png) no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal7_row1_wanted1_img {
+    position: absolute;
+    width: 108px;
+    height: 97px;
+    top: 8px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal7_row1_wanted2_img {
+    position: absolute;
+    width: 107px;
+    height: 71px;
+    top: 31px;
+    left: 29px;
+    background: url('../image/L2574_Fish_JumperCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal7_row1_sale1_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 18px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal7_row1_sale2_img {
+    position: absolute;
+    width: 120px;
+    height: 102px;
+    top: 7px;
+    left: 28px;
+    background: url('../image/L2574_Fish_Fizzer.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal7_row2_wanted1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 25px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal7_row2_wanted2_img {
+    position: absolute;
+    width: 120px;
+    height: 102px;
+    top: 7px;
+    left: 28px;
+    background: url('../image/L2574_Fish_Fizzer.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal7_row2_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal7_row2_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal7_row3_wanted1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal7_row3_wanted2_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 26px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal7_row3_sale1_img {
+    position: absolute;
+    width: 101px;
+    height: 91px;
+    top: 15px;
+    left: 18px;
+    background: url('../image/L2574_Fish_Superfish.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal7_row3_sale2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal8_row1_wanted1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal8_row1_wanted2_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal8_row1_sale1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 16px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal8_row1_sale2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal8_row2_wanted1_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal8_row2_wanted2_img {
+    position: absolute;
+    width: 101px;
+    height: 91px;
+    top: 15px;
+    left: 28px;
+    background: url('../image/L2574_Fish_Superfish.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal8_row2_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal8_row2_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal8_row3_wanted1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 23px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal8_row3_wanted2_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 18px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal8_row3_sale1_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal8_row3_sale2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 18px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal9_row1_wanted1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal9_row1_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 26px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal9_row1_sale1_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal9_row1_sale2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 18px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal9_row2_wanted1_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal9_row2_wanted2_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal9_row2_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal9_row2_sale2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal9_row3_wanted1_img {
+    position: absolute;
+    width: 101px;
+    height: 91px;
+    top: 15px;
+    left: 27px;
+    background: url('../image/L2574_Fish_Superfish.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal9_row3_wanted2_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 27px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+}
+
+#gsm_modal9_row3_sale1_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 18px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal9_row3_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal10_row1_wanted1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal10_row1_wanted2_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 27px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal10_row1_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 18px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal10_row1_sale2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal10_row2_wanted1_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal10_row2_wanted2_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+}
+
+#gsm_modal10_row2_sale1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 16px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal10_row2_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal10_row3_wanted1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 25px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal10_row3_wanted2_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 27px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal10_row3_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal10_row3_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal11_row1_wanted1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 25px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal11_row1_wanted2_img {
+    position: absolute;
+    width: 104px;
+    height: 76px;
+    top: 29px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal11_row1_sale1_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal11_row1_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal11_row2_wanted1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 21px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal11_row2_wanted2_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+}
+
+#gsm_modal11_row2_sale1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 16px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal11_row2_sale2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal11_row3_wanted1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 25px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal11_row3_wanted2_img {
+    position: absolute;
+    width: 101px;
+    height: 91px;
+    top: 15px;
+    left: 27px;
+    background: url('../image/L2574_Fish_Superfish.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal11_row3_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal11_row3_sale2_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal12_row1_wanted1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal12_row1_wanted2_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal12_row1_sale1_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal12_row1_sale2_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 22px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal12_row2_wanted1_img {
+    position: absolute;
+    width: 120px;
+    height: 102px;
+    top: 7px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Fizzer.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal12_row2_wanted2_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+}
+
+#gsm_modal12_row2_sale1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 16px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal12_row2_sale2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal12_row3_wanted1_img {
+    position: absolute;
+    width: 120px;
+    height: 102px;
+    top: 7px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Fizzer.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal12_row3_wanted2_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 26px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal12_row3_sale1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 16px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal12_row3_sale2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal13_row1_wanted1_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 32px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+}
+
+#gsm_modal13_row1_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal13_row1_sale1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 16px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal13_row1_sale2_img {
+    position: absolute;
+    width: 108px;
+    height: 97px;
+    top: 8px;
+    left: 22px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal13_row2_wanted1_img {
+    position: absolute;
+    width: 108px;
+    height: 97px;
+    top: 8px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal13_row2_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal13_row2_sale1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 16px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal13_row2_sale2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal13_row3_wanted1_img {
+    position: absolute;
+    width: 97px;
+    height: 77px;
+    top: 30px;
+    left: 26px;
+    background: url('../image/L2574_Fish_Goggleye.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal13_row3_wanted2_img {
+    position: absolute;
+    width: 101px;
+    height: 91px;
+    top: 15px;
+    left: 27px;
+    background: url('../image/L2574_Fish_Superfish.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal13_row3_sale1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 16px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal13_row3_sale2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal14_row1_wanted1_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 25px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal14_row1_wanted2_img {
+    position: absolute;
+    width: 111px;
+    height: 84px;
+    top: 16px;
+    left: 24px;
+    background: url('../image/L2574_Fish_HairyCarp.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal14_row1_sale1_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal14_row1_sale2_img {
+    position: absolute;
+    width: 108px;
+    height: 97px;
+    top: 8px;
+    left: 22px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal14_row2_wanted1_img {
+    position: absolute;
+    width: 108px;
+    height: 97px;
+    top: 8px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal14_row2_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 23px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal14_row2_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal14_row2_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal14_row3_wanted1_img {
+    position: absolute;
+    width: 101px;
+    height: 91px;
+    top: 15px;
+    left: 26px;
+    background: url('../image/L2574_Fish_Superfish.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal14_row3_wanted2_img {
+    position: absolute;
+    width: 100px;
+    height: 85px;
+    top: 14px;
+    left: 25px;
+    background: url('../image/L2574_Fish_MutantMud.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal14_row3_sale1_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal14_row3_sale2_img {
+    position: absolute;
+    width: 103px;
+    height: 93px;
+    top: 10px;
+    left: 18px;
+    background: url('../image/L2574_Fish_RazorCod.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal15_row1_wanted1_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 30px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+}
+
+#gsm_modal15_row1_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    top: 15px;
+    left: 24px;
+    background: url('../image/L2574_Fish_BluePuff.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal15_row1_sale1_img {
+    position: absolute;
+    width: 103px;
+    height: 70px;
+    top: 31px;
+    left: 16px;
+    cursor: pointer;
+    background: url('../image/L2574_Fish_Vamper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal15_row1_sale2_img {
+    position: absolute;
+    width: 108px;
+    height: 97px;
+    top: 8px;
+    left: 22px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal15_row2_wanted1_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 23px;
+    background: url('../image/L2574_Fish_FabulousFin.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal15_row2_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal15_row2_sale1_img {
+    position: absolute;
+    width: 108px;
+    height: 97px;
+    top: 8px;
+    left: 22px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal15_row2_sale2_img {
+    position: absolute;
+    width: 107px;
+    height: 71px;
+    top: 31px;
+    left: 29px;
+    background: url('../image/L2574_Fish_JumperCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal15_row3_wanted1_img {
+    position: absolute;
+    width: 108px;
+    height: 97px;
+    top: 8px;
+    left: 25px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal15_row3_wanted2_img {
+    position: absolute;
+    width: 110px;
+    height: 81px;
+    top: 20px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Sawtooth.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+#gsm_modal15_row3_sale1_img {
+    position: absolute;
+    width: 104px;
+    height: 70px;
+    top: 29px;
+    left: 24px;
+    background: url('../image/L2574_Fish_Vacuumer.png') no-repeat;
+    background-size: contain;
+    transition: all 0.1s ease-in;
+}
+
+#gsm_modal15_row3_sale2_img {
+    position: absolute;
+    width: 107px;
+    height: 71px;
+    top: 31px;
+    left: 29px;
+    background: url('../image/L2574_Fish_JumperCarp.png') no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.1s ease-in;
+}
+
+#toolTips {
+    display: none;
+}
+
+#gs_cash_counter {
+    position: absolute;
+    width: 150px;
+    height: 151px;
+    left: 578px;
+    top: 16px;
+}
+
+#gs_stock {
+    position: absolute;
+    width: 88px;
+    height: 74px;
+    right: 239px;
+    top: 54px;
+    z-index: 2;
+}
+
+.randomFishes {
+    width: 15px;
+    height: 15px;
+    background: url('../image/L2574_Fish_Scarper.png') no-repeat;
+    background-size: contain;
+    position: absolute;
+    opacity: 1;
+}
+
+#gs_fish_stock, #gss {
+    position: absolute;
+    width: 190px;
+    height: 730px;
+    right: 22px;
+    top: 18px;
+}
+
+#gs_results_page {
+    width: 1250px;
+    height: 768px;
+    position: absolute;
+    display: none;
+}
+
+#results_backgroundImg {
+    width: 1250px;
+    height: 768px;
+    position: absolute;
+    -webkit-background-size: 50% 50%;
+    background-size: 100% 100%;
+}
+
+#results_backgroundPrintImg {
+    width: 1250px;
+    height: 768px;
+    position: absolute;
+    -webkit-background-size: 50% 50%;
+    background-size: 100% 100%;
+    display: none;
+}
+
+#gs_market_visited {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 339px;
+    top: 137px;
+    color: #1d6b7d;
+    font-size: 20px;
+    text-align: center;
+    font-family: MyriadWebProbolditalic;
+}
+
+#gs_results_container1 {
+    position: absolute;
+    width: 274px;
+    height: 138px;
+    left: 147px;
+    top: 173px;
+}
+
+#gs_results_text1 {
+    position: absolute;
+    width: 260px;
+    padding: 10px;
+    top: -18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #007ad5;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.3px;
+}
+
+#gs_results_text2 {
+    position: absolute;
+    width: 262px;
+    padding: 10px;
+    top: 15px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #14596b;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.4px;
+}
+
+#gs_results_container2 {
+    position: absolute;
+    width: 272px;
+    height: 138px;
+    left: 464px;
+    top: 173px;
+}
+
+#gs_results_text3 {
+    position: absolute;
+    width: 270px;
+    padding: 10px;
+    top: -18px;
+    color: #007ad5;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.3px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#gs_results_text4 {
+    position: absolute;
+    width: 269px;
+    padding: 10px;
+    top: 15px;
+    color: #14596b;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.4px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#gs_market_status {
+    position: absolute;
+    width: 206px;
+    height: 196px;
+    left: 497px;
+    top: 53px;
+    background: url("../image/L2574_Statusbar_result.gif") no-repeat;
+    background-size: 100% 100%;
+}
+
+#gs_market_stock_quantity {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 275px;
+    top: 86px;
+    font-size: 20px;
+    color: #1d6b7d;
+    text-align: center;
+    font-family: arial;
+    -webkit-transform: rotate(-19deg);
+    -moz-transform: rotate(-19deg);
+    -ms-transform: rotate(-19deg);
+    -o-transform: rotate(-19deg);
+}
+
+#gs_market_stock_value {
+    position: absolute;
+    width: 68px;
+    height: 30px;
+    right: 255px;
+    top: 130px;
+    text-align: center;
+    font-family: MyriadWebProbolditalic;
+    font-size: 27px;
+    color: #ff5c00;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+}
+
+#gs_results_container3 {
+    position: absolute;
+    width: 272px;
+    height: 138px;
+    left: 781px;
+    top: 173px;
+}
+
+#gs_results_text5 {
+    position: absolute;
+    width: 260px;
+    padding: 10px;
+    top: -18px;
+    color: #007ad5;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.3px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#gs_results_text6 {
+    position: absolute;
+    width: 250px;
+    padding: 10px;
+    top: 15px;
+    color: #14596b;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.4px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#gs_market_transaction_happy {
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    left: 279px;
+    top: 471px;
+    color: #1d6b7d;
+    font-size: 14px;
+    text-align: center;
+    font-family: MyriadWebProbolditalic;
+}
+
+#gs_market_transaction_ok {
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    left: 320px;
+    top: 469px;
+    color: #1d6b7d;
+    font-size: 14px;
+    text-align: center;
+    font-family: MyriadWebProbolditalic;
+}
+
+#gs_market_transaction_sad {
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    left: 360px;
+    top: 469px;
+    color: #1d6b7d;
+    font-size: 14px;
+    text-align: center;
+    font-family: MyriadWebProbolditalic;
+}
+
+#gs_results_container4 {
+    position: absolute;
+    width: 274px;
+    height: 150px;
+    left: 147px;
+    top: 478px;
+}
+
+#gs_results_text7 {
+    position: absolute;
+    width: 240px;
+    padding: 10px;
+    top: -18px;
+    color: #007ad5;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.3px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#gs_results_text8 {
+    position: absolute;
+    width: 273px;
+    padding: 10px;
+    top: 15px;
+    color: #14596b;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.4px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#gs_results_container5 {
+    position: absolute;
+    width: 274px;
+    height: 138px;
+    left: 464px;
+    top: 478px;
+}
+
+#gs_results_text9 {
+    position: absolute;
+    width: 270px;
+    padding: 10px;
+    top: -18px;
+    color: #007ad5;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.3px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#gs_results_text10 {
+    position: absolute;
+    width: 269px;
+    padding: 10px;
+    top: 15px;
+    color: #14596b;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.4px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#gs_market_final_cash {
+    position: absolute;
+    width: 68px;
+    height: 30px;
+    right: 234px;
+    top: 379px;
+    text-align: center;
+    font-family: MyriadWebProbolditalic;
+    font-size: 27px;
+    color: #ff5c00;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+}
+
+#gs_results_container6 {
+    position: absolute;
+    width: 274px;
+    height: 138px;
+    left: 781px;
+    top: 478px;
+}
+
+#gs_results_text11 {
+    position: absolute;
+    width: 270px;
+    padding: 10px;
+    top: -18px;
+    color: #007ad5;
+    font-size: 20px;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.3px;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+}
+
+#gs_results_text12 {
+    position: absolute;
+    width: 259px;
+    padding: 10px;
+    top: 15px;
+    color: #14596b;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.4px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#results_history_btn {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 146px;
+    top: 679px;
+}
+
+#results_history_btn_img {
+    width: 130px;
+    height: 40px;
+}
+
+#results_history_btn:hover {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 146px;
+    top: 679px;
+    cursor: pointer;
+}
+
+#gs_results_transaction {
+    position: absolute;
+    width: 138px;
+    height: 76px;
+    top: 378px;
+    left: 131px;
+}
+
+#gs_results_transactionImg {
+    position: absolute;
+    width: 138px;
+    height: 76px;
+}
+
+#results_history_btn:active {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 146px;
+    top: 679px;
+    cursor: pointer;
+}
+
+#gs_trans_overlay {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 669px;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#gs_trans_dialog {
+    position: absolute;
+    width: 1024px;
+    height: 673px;
+    left: 86px;
+    top: 72px;
+    background: url("../image/L2574_Game_trading_history.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+#gs_trans_dialog_close_btn {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 4px;
+    top: 7px;
+    cursor: pointer;
+    background: url("../image/L2574_Close.png") no-repeat;
+    background-size: contain;
+    display: none;
+}
+
+#market1 {
+    display: none;
+}
+
+#gs_trans_dialog_close_btn:hover {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 4px;
+    top: 7px;
+    background: url("../image/L2574_Close_hover.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#gs_trans_dialog_close_btn:active {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 4px;
+    top: 7px;
+    background: url("../image/L2574_Close_focus.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#results_history {
+    position: absolute;
+    width: 1011px;
+    height: 403px;
+    left: 5px;
+    top: 243px;
+}
+
+#result_history_location {
+    position: absolute;
+    width: 305px;
+    margin: 10px;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+#result_history_fish {
+    position: absolute;
+    width: 290px;
+    padding: 5px;
+    left: 300px;
+    border-collapse: collapse;
+}
+
+#average_fish_quantity {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    top: 138px;
+    color: #1d6b7d;
+    text-align: center;
+    font-family: MyriadWebProbolditalic;
+}
+
+#success_fish_quantity {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 354px;
+    top: 139px;
+    color: #1d6b7d;
+    text-align: center;
+    font-family: MyriadWebProbolditalic;
+}
+
+#unsuccess_fish_quantity {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 303px;
+    top: 138px;
+    color: #1d6b7d;
+    text-align: center;
+    font-family: MyriadWebProbolditalic;
+}
+
+.gsm_modal_wanted_class, .gsm_modal_wanted_img_class {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+#result_average_fish_sold {
+    position: absolute;
+    width: 290px;
+    height: 40px;
+    left: 62px;
+    top: 126px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    font-family: MyriadWebPro;
+    color: #ffffff;
+}
+
+#result_average_fish_bought {
+    position: absolute;
+    width: 290px;
+    height: 40px;
+    left: 62px;
+    top: 151px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    font-family: MyriadWebPro;
+    color: #ffffff;
+}
+
+#result_success_fish_sold {
+    position: absolute;
+    width: 310px;
+    height: 40px;
+    left: 394px;
+    top: 126px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    font-family: MyriadWebPro;
+    color: #ffffff;
+}
+
+#result_success_fish_bought {
+    position: absolute;
+    width: 310px;
+    height: 40px;
+    left: 394px;
+    top: 151px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    font-family: MyriadWebPro;
+    color: #ffffff;
+}
+
+#result_unsuccess_fish_sold {
+    position: absolute;
+    width: 258px;
+    height: 40px;
+    left: 735px;
+    top: 126px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    font-family: MyriadWebPro;
+    color: #ffffff;
+}
+
+#result_unsuccess_fish_bought {
+    position: absolute;
+    width: 310px;
+    height: 40px;
+    left: 735px;
+    color: #ffffff;
+    top: 150px;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    font-family: MyriadWebPro;
+}
+
+#results_print {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 542px;
+    top: 679px;
+}
+
+#results_print_img {
+    width: 130px;
+    height: 40px;
+}
+
+#results_print:hover {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 542px;
+    top: 679px;
+    cursor: pointer;
+}
+
+#results_print:active {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 542px;
+    top: 679px;
+    cursor: pointer;
+}
+
+#results_start_again {
+    position: absolute;
+    width: 145px;
+    height: 40px;
+    right: 171px;
+    top: 679px;
+}
+
+#results_start_again_img {
+    width: 145px;
+    height: 40px;
+}
+
+#results_start_again:hover {
+    position: absolute;
+    width: 145px;
+    height: 40px;
+    right: 171px;
+    top: 679px;
+    cursor: pointer;
+}
+
+#results_start_again:active {
+    position: absolute;
+    width: 145px;
+    height: 40px;
+    right: 171px;
+    top: 679px;
+}
+
+#gs_footer {
+    width: 1250px;
+    height: 60px;
+    position: absolute;
+    bottom: -60px;
+}
+
+#gs_footer .logo {
+    width: 160px;
+    height: 70px;
+    background: url('../image/tlf_logo.png') no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    cursor: pointer;
+}
+
+#gs_footer .copyright {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    font-family: arial;
+}
+
+#printCopywrite {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 14px;
+    font-family: arial;
+    display: none;
+}
+
+#gs_footer .copyright a {
+    color: blue;
+    text-decoration: none;
+}
+
+#gs_footer .logo a {
+    width: 160px;
+    height: 70px;
+    position: absolute;
+}
+
+#gs_footer .link {
+    width: 130px;
+    height: 50px;
+    background: url('../image/link.png') no-repeat;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    cursor: pointer;
+    font-family: arial;
+    background-size: 100% 100%;
+}
+
+.link22 {
+    position: absolute;
+    font-size: 13px;
+    right: 0px;
+    font-family: arial;
+    bottom: -25px;
+}
+
+#gs_footer .link a {
+    width: 130px;
+    height: 50px;
+    position: absolute;
+}
+
+.copyrightPrint {
+    position: absolute;
+    z-index: 5;
+    top: 755px;
+    left: 80px;
+    display: none;
+}
+
+.fishHistory {
+    position: absolute;
+    width: 34px;
+    height: 35px;
+    background: url(../image/L2574_Bluepuff_history.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 122px;
+    margin-top: 95px;
+    cursor: pointer;
+}
+
+@keyframes myfirst {
+    0% {
+        background: #e6e600;
+    }
+    20% {
+        background: #d4ba2f;
+    }
+    25% {
+        background: #e6e600;
+    }
+    50% {
+        background: #89E8F2;
+    }
+    100% {
+        background: #e6e600;
+    }
+}
+
+@-moz-keyframes myfirst {
+    0% {
+        background: #e6e600;
+    }
+    20% {
+        background: #d4ba2f
+    }
+    25% {
+        background: #e6e600;
+    }
+    50% {
+        background: #89E8F2;
+    }
+    100% {
+        background: #e6e600;
+    }
+}
+
+@-webkit-keyframes myfirst {
+    0% {
+        background: #e6e600;
+    }
+    20% {
+        background: #d4ba2f
+    }
+    25% {
+        background: #e6e600;
+    }
+    50% {
+        background: #89E8F2;
+    }
+    100% {
+        background: #e6e600;
+    }
+}
+
+@-o-keyframes myfirst {
+    0% {
+        background: #e6e600;
+    }
+    20% {
+        background: #d4ba2f
+    }
+    25% {
+        background: #e6e600;
+    }
+    50% {
+        background: #89E8F2;
+    }
+    100% {
+        background: #e6e600;
+    }
+}
+
+.ui-state-active {
+    background-color: red;
+    background: red;
+    animation: myfirst 0.7s;
+    -moz-animation: myfirst 0.7s;
+    -webkit-animation: myfirst 0.7s;
+    -o-animation: myfirst 0.7s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+
+.divWantedHover {
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+    animation: mysecond 0.8s;
+    -moz-animation: mysecond 0.8s;
+    -webkit-animation: mysecond 0.8s;
+    -o-animation: mysecond 0.8s;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+
+@keyframes mysecond {
+    0% {
+        background: #99E7F2;
+    }
+    25% {
+        background: #153CAF;
+    }
+    50% {
+        background: #99E7F2;
+    }
+    75% {
+        background: #153CAF;
+    }
+    100% {
+        background: #99E7F2;
+    }
+}
+
+.title {
+    position: absolute;
+    width: 122px;
+    height: 24px;
+    background: rgba(255, 255, 255, .7);
+    margin-left: -6px;
+    padding: 3px;
+    color: #333333;
+    border-radius: 6px;
+    font-size: 1.375em;
+    letter-spacing: 0.2px;
+    font-family: MyriadWebProfont;
+    text-align: center;
+    float: left;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.qty {
+    position: absolute;
+    width: 35px;
+    height: 32px;
+    font-weight: bold;
+    text-align: center;
+    background: url(../image/L2574_Fish_quantity.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    margin-left: 98px;
+    margin-top: 9px;
+    float: left;
+    color: black;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.focus-div {
+    border: 5px solid yellow !important;
+    outline: none;
+}
+
+#divStatus {
+    position: absolute;
+    background-image: url(../image/429.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 224px;
+    height: 208px;
+    z-index: 1;
+}
+
+#overlay_div1 {
+    position: absolute;
+    height: 65px;
+    width: 37px;
+    top: 52px;
+    left: 24px;
+    background-color: transparent;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#overlay_div2 {
+    position: absolute;
+    height: 74px;
+    width: 47px;
+    top: 35px;
+    left: 63px;
+    background-color: transparent;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#overlay_div3 {
+    position: absolute;
+    height: 81px;
+    width: 53px;
+    top: 25px;
+    left: 108px;
+    background-color: transparent;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#overlay_div4 {
+    position: absolute;
+    height: 92px;
+    width: 55px;
+    top: 16px;
+    left: 163px;
+    background-color: transparent;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#progressBar {
+    position: absolute;
+    height: 64px;
+    width: 190px;
+    top: 110px;
+    left: 15px;
+}
+
+#btn1 {
+    position: absolute;
+    top: 300px;
+    left: 0px;
+}
+
+#btn2 {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+#btn3 {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+
+#star1 {
+    position: absolute;
+    width: 40px;
+    height: 62px;
+    top: 12px;
+    left: 1px;
+    background-image: url(../image/star_1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+#star2 {
+    position: absolute;
+    width: 44px;
+    height: 71px;
+    top: 75px;
+    left: 4px;
+    background-image: url(../image/star_2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#star3 {
+    position: absolute;
+    width: 53px;
+    height: 77px;
+    top: 80px;
+    left: 3px;
+    background-image: url(../image/star_3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#star4 {
+    position: absolute;
+    width: 53px;
+    height: 85px;
+    top: 90px;
+    left: 1px;
+    background-image: url(../image/star_4.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+#result_history_table .table_img {
+    float: left;
+    padding-top: 5px;
+    width: 26px;
+    height: 19px;
+    display: block;
+}
+
+#result_history_table .table_img2 {
+    float: left;
+    padding-top: 4px;
+    width: 24px;
+    height: 20px;
+    display: block;
+}
+
+.smileyImg {
+    height: 20px;
+    width: 20px;
+}
+
+.smileyImgH {
+    float: left;
+    height: 20px;
+    width: 20px;
+}
+
+.tableTextH {
+    padding-left: 4px;
+    float: left;
+}
+
+.tableText {
+    padding-top: 21px;
+    padding-left: 25px;
+    float: left;
+}
+
+.tableText2 {
+    padding-top: 5px;
+    float: left;
+}
+
+#result_history_table {
+    position: absolute;
+    width: 976px;
+    left: 7px;
+    overflow-y: scroll;
+    color: white;
+    padding: 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+    border-collapse: collapse;
+    font-family: MyriadWebProCondensed;
+    font-weight: bold;
+}
+
+#result_history_table tr td {
+    vertical-align: bottom !important;
+    padding-bottom: 7px;
+}
+
+#result_history_table tr td:first-child {
+    width: 154px;
+    padding-left: 12px;
+}
+
+#result_history_table tr td:nth-child(2) {
+    width: 211px;
+    padding-left: 11px;
+}
+
+#result_history_table tr td:nth-child(3) {
+    width: 49px;
+}
+
+#result_history_table tr td:nth-child(4) {
+    width: 50px;
+}
+
+#result_history_table tr td:last-child {
+    width: 174px;
+}
+
+#result_history_table tr:nth-child(even) {
+    background: #5f96a3;
+    height: 35px;
+}
+
+#result_history_table tr:nth-child(odd) {
+    background: #4988a6;
+    height: 35px;
+}
+
+#gs_trans_overlay_fish {
+    position: absolute;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 669px;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#gs_trans_dialog_fish {
+    position: absolute;
+    width: 734px;
+    height: 634px;
+    left: 255px;
+    top: 90px;
+    background: url(../image/L2574_Fish_trading_history.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+#gs_trans_dialog_fish_close_btn {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 4px;
+    top: 7px;
+    cursor: pointer;
+    background: url("../image/L2574_Close.png") no-repeat;
+    background-size: contain;
+    display: none;
+}
+
+#gs_trans_dialog_fish_close_btn:hover {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 4px;
+    top: 7px;
+    background: url("../image/L2574_Close_hover.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#gs_trans_dialog_fish_close_btn:active {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 4px;
+    top: 7px;
+    background: url("../image/L2574_Close_focus.png") no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#gs_fish_history_image {
+    position: absolute;
+    width: 71px;
+    height: 54px;
+    left: 22px;
+    top: 15px;
+}
+
+#gs_trader_name {
+    position: absolute;
+    width: 203px;
+    height: 28px;
+    left: 362px;
+    top: 22px;
+    font-family: MyriadWebPro;
+    font-size: 28px;
+    text-align: left;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0.7px;
+}
+
+#fish_history {
+    position: absolute;
+    width: 703px;
+    height: 472px;
+    left: 21px;
+    top: 121px;
+}
+
+#fish_history_table {
+    position: absolute;
+    width: 675px;
+    left: -1px;
+    overflow-y: scroll;
+    color: white;
+    padding: 0;
+    font-size: 20px;
+    border-collapse: collapse;
+    font-family: MyriadWebProfont;
+    letter-spacing: 0.7px;
+}
+
+#fish_history_table tr td:first-child {
+    width: 103px;
+    padding-left: 12px;
+    padding-top: 8px;
+}
+
+#fish_history_table tr td:nth-child(2) {
+    width: 46px;
+    padding-left: 7px;
+    padding-top: 8px;
+}
+
+#fish_history_table tr td:nth-child(3) {
+    width: 53px;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+#fish_history_table tr td:last-child {
+    width: 127px;
+    padding-top: 8px;
+}
+
+#fish_history_table tr:nth-child(even) {
+    background: #5f96a3;
+    height: 35px;
+}
+
+#fish_history_table tr:nth-child(odd) {
+    background: #4988a6;
+    height: 35px;
+}
+
+#gs_trans_overlay_fish {
+    display: none;
+}
+
+.historyImg {
+    height: 28px;
+    width: 39px;
+    padding-top: 10px;
+    padding-left: 7px;
+}
+
+#congratsDiv {
+    position: absolute;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+#congratCloud {
+    position: absolute;
+    height: 638px;
+    width: 979px;
+    top: 103px;
+    left: 207px;
+}
+
+#congratCloudGif {
+    position: absolute;
+    height: 638px;
+    width: 979px;
+}
+
+#congratImg {
+    position: absolute;
+    height: 468px;
+    width: 646px;
+    top: 100px;
+    left: 81px;
+}
+
+#gs_status_video {
+    position: absolute;
+    width: 200px;
+    height: 160px;
+    top: 24px;
+    left: 523px;
+}
+
+#gs_status_video img {
+    position: absolute;
+    width: 233px;
+    height: 211px;
+    top: -22px;
+    left: -16px;
+}
+
+.scrollbar {
+    position: absolute;
+    height: 300px;
+    width: 65px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#gs_fish_stock::-webkit-scrollbar-track {
+    position: absolute;
+    width: 25px;
+    height: 768px;
+    background: url(../image/L2574_Scroll_Panel.png) no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+#gs_fish_stock::-webkit-scrollbar {
+    position: absolute;
+    width: 30px;
+    background: url(../image/L2574_Scroll_Panel.png) no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+#gs_fish_stock::-webkit-scrollbar-thumb {
+    background: url(../image/L2574_Scrollbar1.png) no-repeat 0px 0px;
+    position: absolute;
+    background-size: 100% 100%;
+}
+
+#gs_fish_stock::-webkit-scrollbar-button:single-button:start {
+    position: absolute;
+    height: 25px;
+    background: url("../image/L2574_Up_arrow_disable.png") no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+#gs_fish_stock::-webkit-scrollbar-button:single-button:end {
+    position: absolute;
+    height: 25px;
+    background: url("../image/L2574_Down_arrow_disable.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+#fish_history::-webkit-scrollbar-track {
+    position: absolute;
+    width: 25px;
+    height: 768px;
+    background: url(../image/L2574_Scroll_Panel.png) no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+#fish_history::-webkit-scrollbar {
+    position: absolute;
+    width: 33px;
+    background: url(../image/L2574_Scroll_Panel.png) no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+#fish_history::-webkit-scrollbar-thumb {
+    background: url(../image/L2574_Scrollbar1.png) no-repeat 0px 0px;
+    position: absolute;
+    background-size: 100% 100%;
+}
+
+#fish_history::-webkit-scrollbar-button:single-button:start {
+    position: absolute;
+    height: 35px;
+    background: url("../image/L2574_Up_arrow_disable.png") no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+#fish_history::-webkit-scrollbar-button:single-button:end {
+    position: absolute;
+    height: 35px;
+    background: url("../image/L2574_Down_arrow_disable.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+#results_history::-webkit-scrollbar-track {
+    position: absolute;
+    width: 25px;
+    height: 768px;
+    background: url(../image/L2574_Scroll_Panel.png) no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+#results_history::-webkit-scrollbar {
+    position: absolute;
+    width: 30px;
+    background: url(../image/L2574_Scroll_Panel.png) no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+#results_history::-webkit-scrollbar-thumb {
+    background: url(../image/L2574_Scrollbar1.png) no-repeat 0px 0px;
+    position: absolute;
+    background-size: 100% 100%;
+}
+
+#results_history::-webkit-scrollbar-button:single-button:start {
+    position: absolute;
+    height: 25px;
+    background: url("../image/L2574_Up_arrow_disable.png") no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+
+#results_history::-webkit-scrollbar-button:single-button:end {
+    position: absolute;
+    height: 25px;
+    background: url("../image/L2574_Down_arrow_disable.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+#sliders {
+    position: absolute;
+    left: 276px;
+    top: 372px;
+    height: 60px;
+    overflow: hidden;
+    width: 111px;
+    overflow: hidden
+}
+
+#happySlider {
+    position: absolute;
+    top: 55px;
+    left: 2px;
+    height: 60px;
+    width: 22px;
+}
+
+#happySliderImg {
+    position: absolute;
+    height: 100%;
+    width: 22px;
+    background-size: 100% 100%;
+}
+
+#okSlider {
+    position: absolute;
+    top: 55px;
+    left: 44px;
+    height: 60px;
+    width: 22px;
+}
+
+#okSliderImg {
+    position: absolute;
+    height: 100%;
+    width: 22px;
+    background-size: 100% 100%;
+}
+
+#sadSlider {
+    position: absolute;
+    top: 55px;
+    left: 85px;
+    height: 60px;
+    width: 22px;
+}
+
+#sadSliderImg {
+    position: absolute;
+    height: 100%;
+    width: 22px;
+    background-size: 100% 100%;
+}
+
+#slidersSmiley {
+    position: absolute;
+    left: 271px;
+    top: 418px;
+    height: 41px;
+    width: 113px;
+}
+
+#happySmiley {
+    position: absolute;
+    bottom: 0px;
+    left: -1px;
+    height: 38px;
+    width: 38px;
+}
+
+#okSmiley {
+    position: absolute;
+    bottom: 0px;
+    left: 41px;
+    height: 38px;
+    width: 38px;
+}
+
+#sadSmiley {
+    position: absolute;
+    bottom: 0px;
+    left: 81px;
+    height: 38px;
+    width: 38px;
+}
+
+#happySmileyImg {
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    /*background: url(../image/L2574_happy.png);*/
+    /*background-size: 100% 100%;*/
+}
+
+#okSmileyImg {
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    /*background: url(../image/L2574_ok.png);*/
+    /*background-size: 100% 100%;*/
+}
+
+#sadSmileyImg {
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    /*background: url(../image/L2574_sad.png);*/
+    /*background-size: 100% 100%;*/
+}
+
+@media print {
+    @page {
+        size: landscape
+    }
+    /* #backgroundImg{
+
+
+position: absolute;
+top:-50px;
+width: 1250px;
+height: 768px;
+
+left:0px;
+-webkit-background-size: 50% 50%;
+background-size: 100% 100%;
+display:block;
+} */
+    #results_history_btn, #results_print, #results_start_again, .link22, .logo, .copyright {
+        display: none;
+    }
+    #happySmileyImg, #okSmileyImg, #sadSmileyImg {
+        background-color: transparent;
+    }
+    #gs_results_page {
+        left: -170px;
+        top: 0px;
+        border: 2px solid black;
+        transform: scale(0.9);
+    }
+    #printCopywrite {
+        display: block;
+        left: -300px;
+        top: -30px;
+        transform: scale(0.9);
+    }
+    #results_backgroundPrintImg {
+        display: block;
+    }
+    #gs_market_visited, #gs_market_transaction_happy, #gs_market_transaction_ok, #gs_market_transaction_sad {
+        color: white
+    }
+}
+
+.gs_fish_stock_class {
+    width: 150px;
+    height: 134px;
+    display: none;
+    z-index: 0;
+    border: 3px solid transparent;
+}
+
+.gs_history_class {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 125px;
+    margin-top: -38px;
+    display: none;
+    outline: none;
+}
+
+.highlight {
+    background-color: white;
+    height: 150px;
+    width: 220px;
+    padding: 5px 13px 0 10px;
+    position: absolute;
+    display: block;
+    z-index: 15;
+    font-size: 22px;
+    font-weight: 500;
+    color: #3a3a3a;
+    /*box-shadow: 1px 1px 2px 1px black;*/
+    font-family: MyriadWebPro;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.highlight1 {
+    background-color: white;
+    height: 150px;
+    width: 220px;
+    padding: 5px 13px 15px 10px;
+    position: absolute;
+    display: block;
+    z-index: 15;
+    font-weight: 500;
+    /*left: 1025px !important;*/
+    font-size: 22px;
+    color: #3a3a3a;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 1);
+    font-family: MyriadWebPro;
+}
+
+#statusgif {
+    display: none;
+}
+
+.fishHistory {
+    /*position: absolute;*/
+    width: 29px;
+    height: 36px;
+    background: url(../image/L2574_Bluepuff_history.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: -2px;
+    margin-top: -11px;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+
+.fishHistory:active {
+    position: absolute;
+    width: 34px;
+    height: 35px;
+    background: url(../image/L2574_Bluepuff_history_focus.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.fishHistory:hover {
+    position: absolute;
+    width: 31px;
+    height: 33px;
+    background: url(../image/L2574_Bluepuff_history_hover.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.gs_market_modal_class {
+    outline: none;
+		
+}
+
+#gs_start_again:focus img {
+    content: url('../image/L2574_Start_again_hover.gif');
+}
+
+#gs_start_again_yes:focus img {
+    content: url('../image/L2574_Yes_button_hover.gif');
+}
+
+#gs_start_again_no:focus img {
+    content: url('../image/L2574_No_button_hover.gif');
+}
+
+#results_history_btn:focus img {
+    content: url('../image/L2574_History_hover.gif');
+}
+
+#gs_start_close:focus img {
+    content: url('../image/L2574_Myrole_close_hover.png');
+}
+
+#results_print:focus img {
+    content: url('../image/L2574_Print_hover.gif');
+}
+
+#results_start_again:focus img {
+    content: url('../image/L2574_Result_start_hover.gif');
+}
+
+#gs_fizzer_buy_yes:focus img {
+    content: url('../image/L2574_Yes_button_hover.gif');
+}
+
+#gs_fizzer_buy_no:focus img {
+    content: url('../image/L2574_No_button_hover.gif');
+}

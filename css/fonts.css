@@ -1,0 +1,67 @@
+/*
+ * Contributed by Rahul Jhaveri on 26/04/17.
+ * JhavTech Studios Pty Ltd (2017)
+ * http://www.jhavtech.com.au
+ */
+
+ @font-face {
+    font-family: 'MyriadWebPro';
+    src: url('../fonts/MyriadWebPro.ttf');
+    src: url('../fonts/MyriadWebPro.otf');
+    src: url('../fonts/MyriadWebPro.svg');
+    src: url('../fonts/MyriadWebPro.woff');
+    src: url('../fonts/MyriadWebPro.woff2');
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+@font-face {
+    font-family: 'MyriadWebProCondensed';
+    src: url('../fonts/22_MyriadWebPro.ttf');
+    src: url('../fonts/22_MyriadWebPro.otf');
+    src: url('../fonts/22_MyriadWebPro.svg');
+    src: url('../fonts/22_MyriadWebPro.woff');
+    src: url('../fonts/22_MyriadWebPro.woff2');
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+@font-face {
+    font-family: 'MyriadWebProbolditalic';
+    src: url('../fonts/6_MyriadWebPro.ttf');
+    src: url('../fonts/6_MyriadWebPro.otf');
+    src: url('../fonts/6_MyriadWebPro.svg');
+    src: url('../fonts/6_MyriadWebPro.woff');
+    src: url('../fonts/6_MyriadWebPro.woff2');
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+@font-face {
+    font-family: 'MyriadWebProfontCondensed';
+    src: url('../fonts/737_MyriadWebProCondensed.ttf');
+    src: url('../fonts/737_MyriadWebProCondensed.otf');
+    src: url('../fonts/737_MyriadWebProCondensed.svg');
+    src: url('../fonts/737_MyriadWebProCondensed.woff');
+    src: url('../fonts/737_MyriadWebProCondensed.woff2');
+    font-weight: normal !important;
+    font-style: normal !important;
+}
+@font-face {
+    font-family: 'MyriadWebProfont';
+    src: url('../fonts/MyriadPro-Bold.ttf');
+    src: url('../fonts/MyriadPro-Bold.otf');
+    src: url('../fonts/MyriadPro-Bold.svg');
+    src: url('../fonts/MyriadPro-Bold.woff');
+    src: url('../fonts/MyriadPro-Bold.woff2');
+    font-weight: bold !important;
+    font-style: normal !important;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/arial.ttf');
+    src: url('../fonts/arial.otf');
+    src: url('../fonts/arial.svg');
+    src: url('../fonts/arial.woff');
+    src: url('../fonts/arial.woff2');
+    font-weight: normal !important;
+    font-style: normal !important;
+}
